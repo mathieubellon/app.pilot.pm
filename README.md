@@ -1,3 +1,11 @@
+*******************
+# This is the archive repository of the pilot.pm Saas.
+After 10 years of an incredible lifetime adventure we must put down our company.
+I couldn't just delete this code, build by many, over so much time.
+So here it is, publicly accessible.
+Farewall my old friend, you did brilliantly.
+*******************
+
 
 The pilot backend runs on python v3.7+, the frontend is written in ES6 javascript, transpiled with babel and bundled with webpack.
 
