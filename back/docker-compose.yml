@@ -1,0 +1,72 @@
+# https://docs.docker.com/compose/compose-file/
+version: '3'
+services:
+  web:
+    image: pilot
+    build:
+     context: . #can be git@github.com:hbyio/app.pilot.pm.git
+     dockerfile: ./Dockerfile
+    env_file:
+     - ../.env
+     - .docker.env # Var declared here override those in first file
+
+    command: python back/manage.py runserver 0.0.0.0:8000 --settings=settings.dev
+    stdin_open: true
+    tty: true
+    volumes:
+     - .:/var/www/pilotapp/back
+     - ../front:/var/www/pilotapp/front
+    ports:
+     - "8000:8000"
+    depends_on:
+     - db
+     - redis
+
+  worker:
+    image: pilot
+    build:
+      context: . #can be git@github.com:hbyio/app.pilot.pm.git
+      dockerfile: ./Dockerfile
+    env_file:
+      - ../.env
+      - .docker.env # Var declared here override those in first file
+    command: python -u back/run_rq_worker.py
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/var/www/pilotapp/back
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: postgres:9.6-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=pilotdevdb
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:alpine #always last version
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - "6379:6379"
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
+    depends_on:
+      - db
+    environment:
+      - discovery.type=single-node #- cluster.initial_master_nodes=es01
+      - cluster.name=docker-cluster
+      - bootstrap.memory_lock=true
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - "9200:9200"

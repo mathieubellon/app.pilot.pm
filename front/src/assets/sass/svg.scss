@@ -1,0 +1,12 @@
+// svg
+
+@import "mixins";
+
+svg {
+    @apply inline-block;
+}
+
+svg.caret {
+    @include square(16px);
+    @apply text-gray-800 ml-0.5 mr-0;
+}

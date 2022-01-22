@@ -1,0 +1,3 @@
+{% load i18n %}
+{{ author.get_friendly_name }} {% trans 'vous a mentionné dans une annotation sur' %} : {% trans 'Contenu' %} #{{ item.id }} {{ item }}
+{% trans "Projet" %} {{ item.project }}

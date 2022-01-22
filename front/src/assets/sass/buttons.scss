@@ -1,0 +1,294 @@
+@import "mixins";
+
+%basebutton {
+    @apply inline-flex items-center;
+    @apply px-2.5 py-1.5;
+    @apply transition ease-in-out duration-150;
+    @apply border border-cool-gray-200;
+    @apply rounded;
+
+    @apply text-sm leading-5 font-medium;
+    @apply text-gray-800 bg-gray-100;
+    @apply cursor-pointer;
+    @apply whitespace-no-wrap;
+
+    &:hover {
+        @apply bg-gray-200;
+    }
+
+    &:active {
+        @apply bg-gray-300;
+    }
+
+    &:focus {
+        @apply shadow-outline-gray outline-none;
+        @apply border-gray-700;
+    }
+
+    svg {
+        @apply inline-block text-gray-900 mr-1;
+        @include square(18px);
+    }
+}
+
+.button {
+    @extend %basebutton !optional;
+    @apply justify-center;
+}
+
+.button.is-outlined {
+    @apply text-gray-800 bg-transparent border border-gray-800;
+    &:hover {
+        @apply bg-gray-200;
+    }
+
+    &:active {
+        @apply bg-gray-700;
+    }
+
+    &:focus {
+        @apply border-gray-700;
+        @apply shadow-outline-gray;
+    }
+}
+
+.button.is-light {
+    @apply text-gray-600 bg-gray-100 border border-gray-200;
+    &:hover {
+        @apply bg-gray-200 text-gray-900;
+    }
+
+    &:active {
+        @apply bg-gray-300;
+    }
+
+    &:focus {
+        @apply border-gray-300;
+        @apply shadow-outline-gray;
+    }
+}
+
+.button.is-red {
+    @apply text-white bg-red-600;
+    &:hover {
+        @apply bg-red-500;
+    }
+
+    &:active {
+        @apply bg-red-700;
+    }
+
+    &:focus {
+        @apply border-red-700;
+        @apply shadow-outline-red;
+    }
+}
+
+.button.is-orange {
+    @apply text-white bg-orange-600;
+    &:hover {
+        @apply bg-orange-500;
+    }
+
+    &:active {
+        @apply bg-orange-700;
+    }
+
+    &:focus {
+        @apply border-orange-700;
+        @apply shadow-outline-orange;
+    }
+}
+
+.button.is-yellow {
+    @apply bg-yellow-200;
+
+    &:hover {
+        @apply bg-yellow-100;
+    }
+
+    &:active {
+        @apply bg-yellow-300;
+    }
+
+    &:focus {
+        @apply border-yellow-300;
+        @apply shadow-outline-yellow;
+    }
+}
+
+.button.is-green {
+    @apply text-white bg-green-600;
+    &:hover {
+        @apply bg-green-500;
+    }
+
+    &:active {
+        @apply bg-green-700;
+    }
+
+    &:focus {
+        @apply border-green-700;
+        @apply shadow-outline-green;
+    }
+}
+
+.button.is-blue {
+    @apply text-white bg-gray-800 border-cool-gray-800;
+    &:hover {
+        @apply bg-cool-gray-700;
+    }
+
+    &:active {
+        @apply bg-cool-gray-900;
+    }
+
+    &:focus {
+        @apply border-gray-700;
+        @apply shadow-outline-gray;
+    }
+}
+
+.button.is-blue-inverted {
+    @apply text-blue-800 bg-transparent;
+    &:hover {
+        @apply bg-blue-800 text-white;
+    }
+
+    &:active {
+        @apply bg-blue-700 text-white;
+    }
+
+    &:focus {
+        @apply border-blue-700;
+        @apply shadow-outline-blue;
+    }
+}
+
+.button.is-indigo {
+    @apply text-white bg-indigo-600;
+    &:hover {
+        @apply bg-indigo-500;
+    }
+
+    &:active {
+        @apply bg-indigo-700;
+    }
+
+    &:focus {
+        @apply border-indigo-700;
+        @apply shadow-outline-indigo;
+    }
+}
+
+.button.is-teal {
+    @apply text-white bg-teal-600;
+    &:hover {
+        @apply bg-teal-500;
+    }
+
+    &:active {
+        @apply bg-teal-700;
+    }
+
+    &:focus {
+        @apply border-teal-700;
+        @apply shadow-outline-teal;
+    }
+}
+
+.button.is-white {
+    @apply text-black bg-white;
+    &:hover {
+        @apply bg-gray-100;
+    }
+
+    &:active {
+        @apply bg-gray-200;
+    }
+
+    &:focus {
+        @apply border-gray-700;
+        @apply shadow-outline-gray;
+    }
+}
+
+.button[disabled],
+.button.disabled {
+    @apply bg-gray-100 border-gray-200 text-gray-400 cursor-not-allowed;
+
+    &:hover {
+        @apply bg-gray-100 border-gray-300 text-gray-400;
+    }
+}
+
+.button.is-small {
+    @apply text-sm font-normal;
+    @apply px-2 py-1;
+}
+
+.button.is-xsmall {
+    @apply text-xs font-semibold;
+    @apply px-1.5 py-0.5;
+}
+
+.button.is-topbar{
+    @apply bg-blue-100;
+}
+
+.list-action-button {
+    @apply inline-flex items-center;
+    @apply px-2 py-1;
+    @apply text-gray-700 bg-gray-50;
+    @apply text-xs leading-5 font-medium;
+    @apply border border-gray-300 rounded-sm;
+    @aply cursor-pointer
+    @apply transition ease-in-out duration-100;
+
+    &:disabled {
+        @apply text-gray-300 border-gray-200;
+    }
+    &:active {
+        @apply bg-gray-100 text-gray-700;
+    }
+
+    &:hover {
+        @apply bg-white text-gray-500;
+    }
+
+    &:focus {
+        @apply z-10 outline-none border-blue-300 shadow-outline-blue;
+    }
+}
+
+/*
+.button-group {
+    @apply relative inline-flex items-center px-2 py-1;
+    @apply border border-gray-300;
+    @apply bg-white text-sm leading-5;
+    @apply font-medium text-gray-700;
+    @apply transition ease-in-out duration-150;
+    &:hover {
+        @apply text-gray-500;
+    }
+
+    &:focus {
+        @apply outline-none;
+        @apply border-blue-300;
+        @apply shadow-outline-blue;
+    }
+
+    &:active {
+        @apply text-gray-700;
+    }
+
+    &.is-left {
+        @apply bg-gray-100;
+        @apply rounded-l-md;
+    }
+
+    &.is-right {
+        @apply rounded-r-md -ml-1;
+    }
+}
+*/

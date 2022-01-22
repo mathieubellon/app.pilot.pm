@@ -1,0 +1,22 @@
+{% extends "layout/base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="hero-container">
+    <div class="hero-panel text-center">
+        <svg width="58" height="58" viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg"><g class="nc-icon-wrapper"><title>67 - Error Message (Flat)</title><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M0 0h58v58H0V0z" fill="#ECF0F1"></path><path d="M0 0h58v12H0V0z" fill="#546A79"></path><path d="M9 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" fill="#ED7161"></path><path d="M18 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" fill="#F0C419"></path><path d="M27 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" fill="#4FBA6F"></path><path d="M35 48H22a1 1 0 1 1 0-2h13a1 1 0 1 1 0 2" fill="#BDC3C7"></path><path d="M40 52H17a1 1 0 1 1 0-2h23a1 1 0 1 1 0 2" fill="#BDC3C7"></path><path d="M17 30c0-6.627 5.373-12 12-12s12 5.373 12 12-5.373 12-12 12-12-5.373-12-12" fill="#ED7161"></path><path d="M30.414 30l4.293-4.293a.999.999 0 1 0-1.414-1.414L29 28.586l-4.293-4.293a.999.999 0 1 0-1.414 1.414L27.586 30l-4.293 4.293a.999.999 0 1 0 1.414 1.414L29 31.414l4.293 4.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L30.414 30" fill="#FFF"></path></g></g></svg>
+
+        <hr />
+
+        <h1>J'ai rencontré un problème en traitant votre requête</h1>
+        <p>J'ai envoyé un email à l'équipe technique pour les avertir</p>
+        <a href="/">Cliquez ici pour revenir à l'accueil</a>
+
+        <hr />
+
+        <h1>An error occured during your request</h1>
+        <p>I sent an email to alert the staff</p>
+        <a href="/">Click here to go back to home</a>
+    </div>
+</div>
+{% endblock %}

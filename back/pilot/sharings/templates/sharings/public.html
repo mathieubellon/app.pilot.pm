@@ -1,0 +1,16 @@
+{% extends "layout/base.html" %}
+
+{% block title %}{{ block.super }}{% endblock %}
+
+{% block app %}
+    <div id="vue-sharing"></div>
+{% endblock %}
+
+{% block extrajs %}
+<script>
+    // rendering context, coming from server-side
+    window.sharingContext = {
+        sharing: {{ sharing_json | safe }},
+    }
+</script>
+{% endblock extrajs %}

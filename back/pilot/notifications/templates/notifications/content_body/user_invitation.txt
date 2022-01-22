@@ -1,0 +1,8 @@
+{% load i18n %}
+{% blocktrans %}
+Bonjour,
+
+{{ sender_full_name }} vous invite à rejoindre son équipe sur Pilot.
+
+Merci de cliquer sur le bouton ci-dessous pour confirmer votre email et terminer votre inscription.
+{% endblocktrans %}

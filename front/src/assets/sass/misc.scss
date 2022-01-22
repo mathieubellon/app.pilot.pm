@@ -1,0 +1,17 @@
+// Important fix for Safari
+// http://stackoverflow.com/a/36476586/1049656
+.row:before,
+.row:after {
+    content: normal; // IE doesn't support `initial`
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.color-swatch {
+    @apply rounded-full h-5 w-5 flex items-center justify-center mr-4;
+}

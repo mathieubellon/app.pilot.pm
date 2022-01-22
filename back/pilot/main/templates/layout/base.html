@@ -1,0 +1,137 @@
+{% load i18n static %}
+{% load render_bundle from webpack_loader %}
+
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="{{ LANGUAGE_CODE }}" class="text-gray-900 antialiased"><!--<![endif]-->  {# hack to target IE9+ or non IE browsers #}
+
+
+<head>
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <meta charset="utf-8">
+    <title>{% block title %}Pilot{% endblock %}</title>
+    <meta name="description" content="Pilot">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="robots" content="noindex, nofollow">
+    <link href="{% static 'favicon.ico' %}" rel="shortcut icon">
+
+    {% if request.user.is_authenticated %}
+        {% render_bundle 'main' 'css' %}
+    {% else %}
+        {% render_bundle 'anonymous' 'css' %}
+    {% endif %}
+</head>
+
+<body>
+
+<noscript>
+    <style>
+        .noscript-message{
+            color: #fff;
+            background-color: #673ab7;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5em;
+        }
+    </style>
+    <div class="noscript-message">
+        {%  trans "Javascript est désactivé sur ce navigateur, l'application ne peut pas fonctionner correctement. Vérifiez les paramètres de votre navigateur ou changez de navigateur" %}
+    </div>
+</noscript>
+
+<div id="user-messages"></div>
+
+{%  block app %}
+    <div id="app">
+        {% if request.user.is_authenticated %}
+            <div id="vue-mainmenu"></div>
+        {% endif %}
+        <main>
+            <div id="app-body">
+                {% block content %}{% endblock content %}
+            </div>
+        </main>
+    </div>
+{%  endblock app %}
+
+{%  include "layout/app_context.html" %}
+
+{% if request.user.is_authenticated %}
+    {% render_bundle 'main' 'js' %}
+{% else %}
+    {% render_bundle 'anonymous' 'js' %}
+{% endif %}
+
+{% block extrajs %}
+{% endblock extrajs %}
+
+{% comment %}
+For fraud detection, stripe encourages including Stripe.js on every page of the shopping experience, not just the checkout page.
+https://stripe.com/docs/disputes/prevention/advanced-fraud-detection
+{% endcomment %}
+<script src="https://checkout.stripe.com/checkout.js"></script>
+
+{% if request.user.is_authenticated and not request.user.is_impersonate and pilot_context.intercom_enabled %}
+    <script>
+        window.intercomSettings = {
+            user_hash: "{{ pilot_context.intercom_user_hash }}",
+            name: "{{ request.user }}",
+            email: "{{ request.user.email }}",
+            desk: "{{ request.desk.name }}",
+            language: "{{ request.user.language }}",
+
+            group: "{{ request.user.permissions.permission }}",
+            created_at: {{ request.user.date_joined|date:"U" }},
+            app_id: "{{ pilot_context.settings.INTERCOM_APP_ID }}"
+        };
+
+        (function () {
+            var w = window;
+            var ic = w.Intercom;
+            if (typeof ic === "function") {
+                ic('reattach_activator');
+                ic('update', intercomSettings);
+            } else {
+                var d = document;
+                var i = function () {
+                    i.c(arguments)
+                };
+                i.q = [];
+                i.c = function (args) {
+                    i.q.push(args)
+                };
+                w.Intercom = i;
+                function l() {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://widget.intercom.io/widget/u5cjbkru';
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })()
+    </script>
+{% endif %}
+
+{% comment %}Google Tag Manager{% endcomment %}
+{% if pilot_context.settings.GOOGLE_TAG_MANAGER_ID %}
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{ pilot_context.settings.GOOGLE_TAG_MANAGER_ID }}');
+    </script>
+{% endif %}
+{% comment %}End Google Tag Manager{% endcomment %}
+</body>
+</html>

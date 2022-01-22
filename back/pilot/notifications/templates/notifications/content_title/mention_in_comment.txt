@@ -1,0 +1,3 @@
+{% load i18n %}
+{{ comment.user.get_friendly_name }} {% trans 'vous a mentionné dans un commentaire sur' %} {{ content_type }} #{{ instance.id }} {{ instance }}
+{% if instance.project %}{% trans "Projet" %} {{ instance.project }}{% endif %}

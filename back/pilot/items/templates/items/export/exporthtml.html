@@ -1,0 +1,27 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            table {
+                width: 100%;
+                table-layout: fixed;
+                border-collapse: collapse;
+            }
+
+            td, th {
+                border: solid 2px #d2d6dc;
+            }
+        </style>
+    </head>
+<body>
+    {% for name, converter in item_content.converters.items %}
+        <p>
+            <strong>{{ converter.label }}</strong>
+            <br />
+            {{ converter.as_html }}
+        </p>
+    {% endfor %}
+</body>
+</html>

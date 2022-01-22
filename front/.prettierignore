@@ -1,0 +1,5 @@
+/node_modules/
+/public/
+/serializePmDoc/
+webpack-stats-dev.json
+webpack-stats.json

@@ -1,0 +1,4 @@
+{% load i18n %}
+{% if sharing.password %}{% trans "Mot de passe" %} : {{ sharing.password }}{% endif %}
+
+{% if sharing.is_editable %}{% trans "Vous pouvez éditer le contenu" %}{% else %}{% trans "Ce partage est en lecture seule, mais vous pouvez valider ou rejeter le contenu" %}{% endif %}

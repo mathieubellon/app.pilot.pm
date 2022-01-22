@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .container--tabs {
+            margin: 2rem;
+        }
+
+        .container--tabs .nav-tabs {
+            float: left;
+            width: 100%;
+            margin: 0;
+            list-style-type: none;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .container--tabs .nav-tabs > li {
+            float: left;
+            margin-bottom: -1px;
+        }
+
+        .container--tabs .nav-tabs > li > a {
+            float: left;
+            margin-right: 2px;
+            line-height: 1.42857143;
+            padding: 10px;
+            border: 1px solid transparent;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .container--tabs .nav-tabs > li > a:hover {
+            border-color: #eee #eee #ddd;
+        }
+
+        .container--tabs .nav-tabs > li.active > a,
+        .container--tabs .nav-tabs > li.active > a:hover,
+        .container--tabs .nav-tabs > li.active > a:focus {
+            color: #555;
+            cursor: default;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-bottom-color: transparent;
+        }
+
+        .container--tabs .tab-content {
+            float: left;
+            width: 100%;
+        }
+
+        .container--tabs .tab-content > .tab-pane {
+            display: none;
+        }
+
+        .container--tabs .tab-content > .tab-pane.active {
+            display: block;
+            padding: 2.5% 3.5%;
+            background-color: #efefef;
+        }
+
+        .container--tabs .tab-content > .active {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <div class="container--tabs">
+        <section class="row">
+
+            <!-- Tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#items">Items ({{ index_files.items | length }})</a></li>
+                <li class=""><a href="#projects">Projects ({{ index_files.projects | length }})</a></li>
+                <li class=""><a href="#assets">Assets ({{ index_files.assets | length }})</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="items" class="tab-pane active">
+					{%  for item_index in index_files.items.values %}
+                        <a href="./{{ item_index.path }}">{{ item_index.name }}</a><br />
+                    {%  endfor %}
+                </div>
+                <div id="projects" class="tab-pane">
+					{%  for project_index in index_files.projects.values %}
+                        <a href="./{{ project_index.path }}">{{ project_index.name }}</a><br />
+                    {%  endfor %}
+                </div>
+                <div id="assets" class="tab-pane">
+					{%  for asset_index in index_files.assets.values %}
+                        <a href="./{{ asset_index.path }}">{{ asset_index.name }}</a><br />
+                    {%  endfor %}
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<footer>
+    <script>
+        window.addEventListener("load", function () {
+            // store tabs variable
+            var myTabs = document.querySelectorAll("ul.nav-tabs > li");
+
+            function myTabClicks(tabClickEvent) {
+                for (var i = 0; i < myTabs.length; i++) {
+                    myTabs[i].classList.remove("active");
+                }
+                var clickedTab = tabClickEvent.currentTarget;
+                clickedTab.classList.add("active");
+                tabClickEvent.preventDefault();
+                var myContentPanes = document.querySelectorAll(".tab-pane");
+                for (i = 0; i < myContentPanes.length; i++) {
+                    myContentPanes[i].classList.remove("active");
+                }
+                var anchorReference = tabClickEvent.target;
+                var activePaneId = anchorReference.getAttribute("href");
+                var activePane = document.querySelector(activePaneId);
+                activePane.classList.add("active");
+            }
+
+            for (i = 0; i < myTabs.length; i++) {
+                myTabs[i].addEventListener("click", myTabClicks)
+            }
+        });
+
+    </script>
+</footer>
+</body>
+</html>

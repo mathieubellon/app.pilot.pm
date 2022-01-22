@@ -1,0 +1,2805 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Pilotv1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-25 10:42+0100\n"
+"PO-Revision-Date: 2018-06-01 09:18+0200\n"
+"Last-Translator: matthieu bellon <matthieu@huckleberry.fr>\n"
+"Language-Team: LANGUAGE <tech@pilot.pm>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.11\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.7.1\n"
+
+msgid "Impossible de désactiver le dernier desk"
+msgstr "Cannot deactivate the last desk"
+
+msgid "Nombre maximum d'utilisateurs"
+msgstr "Maximum number of users"
+
+msgid "Nombre maximum de projets"
+msgstr "Maximum number of projects"
+
+msgid "Nombre maximum de contenus"
+msgstr "Maximum number of contents"
+
+msgid "Taille de stockage maximale (en Giga-octets)"
+msgstr "Maximum storage capacity (in Giga-byte)"
+
+msgid "Accès aux fonctionnalités avancées ?"
+msgstr "Access to advanced features ?"
+
+msgid "Nom"
+msgstr "Name"
+
+msgid "Prix affiché"
+msgstr "Price displayed"
+
+msgid ""
+"Valeur d'affichage uniquement, aucun impact sur la facturation réelle.Seule "
+"la configuration Stripe impacte la prix facturé."
+msgstr ""
+
+msgid "Stripe plan id"
+msgstr "Stripe plan id"
+
+msgid "Gratuit"
+msgstr "Free"
+
+msgid "Mois"
+msgstr "Month"
+
+msgid "An"
+msgstr "Year"
+
+msgid "Illimité"
+msgstr "Unlimited"
+
+#, python-format
+msgid "Limite d'utilisation atteinte:  %(max_usage)s %(label)s"
+msgstr "Usage limit reached:  %(max_usage)s %(label)s"
+
+msgid "Utilisateurs"
+msgstr "Users"
+
+msgid "Projets"
+msgstr "Projects"
+
+msgid "Contenus"
+msgstr "Contents"
+
+msgid "Stockage maximum"
+msgstr "Maximum storage"
+
+msgid "Fonctionnalités avancées"
+msgstr "Advanced features"
+
+msgid "Proposition acceptée"
+msgstr "Accepted suggestion"
+
+msgid "Fichier lié"
+msgstr "File linked"
+
+msgid "Fichier retiré"
+msgstr "File removed"
+
+msgid "a annulé le refus de la proposition"
+msgstr "canceled the rejection of suggestion"
+
+msgid "Clôture"
+msgstr "Closed"
+
+msgid "Commentaire"
+msgstr "Comment"
+
+msgid "Copie depuis"
+msgstr "Copied from"
+
+msgid "Création"
+msgstr "Creation"
+
+msgid "Suppression"
+msgstr "Deletion"
+
+msgid "Contenu validé"
+msgstr "Content validated"
+
+msgid "Contenu non validé"
+msgstr "Content not validated"
+
+msgid "Verrouillage édition"
+msgstr "Lock edition"
+
+msgid "Nouvel utilisateur"
+msgstr "New user"
+
+msgid "Mis à la corbeille"
+msgstr "Trashed"
+
+msgid "Proposition rejetée"
+msgstr "Suggestion rejected"
+
+msgid "Ré-ouverture"
+msgstr "Re-opened"
+
+msgid "Restauration"
+msgstr "Restored"
+
+msgid "Restauration de la corbeille"
+msgstr "Restored from trash"
+
+msgid "Révocation"
+msgstr "Revoke"
+
+msgid "Partage"
+msgstr "Sharing"
+
+msgid "Session d'édition"
+msgstr "Edit session"
+
+msgid "Création de tâche"
+msgstr "Task creation"
+
+msgid "Suppression de tâche"
+msgstr "Task deletion"
+
+msgid "Tâche effectuée"
+msgstr "Task done"
+
+msgid "Modification de tâche"
+msgstr "Task update"
+
+msgid "Déverrouillage édition"
+msgstr "Edition unlock"
+
+msgid "Modification"
+msgstr "Update"
+
+msgid "Statut de workflow modifié"
+msgstr "Workflow state update"
+
+msgid "Version majeure créée"
+msgstr "Major version created"
+
+msgid "a accepté"
+msgstr "accepted"
+
+msgid "a approuvé"
+msgstr "approved"
+
+msgid "Rejet du partage"
+msgstr "Review rejection"
+
+msgid "Intégration des modifications de"
+msgstr "Merged changes from"
+
+msgid "a marqué [Publié]"
+msgstr "marked [Published]"
+
+msgid "Mise à jour du contenu partagé"
+msgstr "Review content update"
+
+msgid "a marqué [Brouillon]"
+msgstr "marked [Draft]"
+
+msgid "a partagé"
+msgstr "shared"
+
+msgid "a marqué [A Valider]"
+msgstr "marked [To validate]"
+
+msgid "Nouvelle version"
+msgstr "New version"
+
+msgid "a marqué [A Publier]"
+msgstr "marked [To publish]"
+
+msgid "a annulé la publication et marqué comme [Brouillon]"
+msgstr "canceled publication and marked [Draft]"
+
+msgid "a annulé le partage"
+msgstr "canceled sharing"
+
+msgid "a mis à jour la version courante"
+msgstr "updated current version"
+
+msgid "Validation du partage"
+msgstr "Review validation"
+
+msgid "Pilot robot"
+msgstr "Pilot robot"
+
+msgid "Public API user"
+msgstr "Public API user"
+
+msgid "Desk"
+msgstr "Desk"
+
+msgid "Email de l'utilisateur"
+msgstr "User email"
+
+msgid "Identifiant de l'utilisateur"
+msgstr "Username"
+
+msgid "Verbe"
+msgstr "Verb"
+
+msgid "Activity"
+msgstr "Activity"
+
+msgid "Activities"
+msgstr "Activities"
+
+msgid "Calendrier :"
+msgstr "Calendar"
+
+msgid "Liste de contenus :"
+msgstr "Content list"
+
+msgid "L'upload de fichier est désactivé sur le site de démo"
+msgstr "File upload is deactivated on the demo site"
+
+msgid "Image"
+msgstr "image"
+
+msgid "Pdf"
+msgstr "Pdf"
+
+msgid "Video"
+msgstr "Video"
+
+msgid "Audio"
+msgstr "Audio"
+
+msgid "Word"
+msgstr "Word"
+
+msgid "Excel"
+msgstr "Excel"
+
+msgid "Powerpoint"
+msgstr "Powerpoint"
+
+msgid "Autre"
+msgstr "Other"
+
+msgid "Titre"
+msgstr "Title"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Fichier"
+msgstr "File"
+
+msgid "Lien externe"
+msgstr "External link"
+
+msgid "Vous pouvez saisir un lien vers un fichier"
+msgstr "You can enter a link to a file"
+
+msgid "Dossier"
+msgstr "Folder"
+
+msgid "Type de fichier"
+msgstr "File type"
+
+msgid "Extension"
+msgstr "Extension"
+
+msgid "Mime"
+msgstr "Mime"
+
+msgid "Conversions"
+msgstr "Conversions"
+
+msgid "Légende ( html )"
+msgstr "Caption ( html )"
+
+msgid "Titre ( html )"
+msgstr "Title (html )"
+
+msgid "Texte alternatif ( html )"
+msgstr "Alt text ( html )"
+
+msgid "Document de référence"
+msgstr ""
+
+msgid "Fichiers"
+msgstr "Files"
+
+msgid "Support de communication"
+msgstr "Usage medium"
+
+msgid "Date d'expiration"
+msgstr "Expiry"
+
+msgid "Droit d'utilisation de média"
+msgstr "Asset usage right"
+
+msgid "Droit d'utilisation de {}"
+msgstr "Usage right of {}"
+
+msgid "Créateurs-trices"
+msgstr "Creators"
+
+msgid "Dernière modification"
+msgstr "Last update"
+
+msgid "Oui"
+msgstr "Yes"
+
+msgid "Non"
+msgstr "No"
+
+msgid "Créé par"
+msgstr "Created by"
+
+msgid "Mis à jour par"
+msgstr "Updated by"
+
+msgid "Responsable"
+msgstr "Owner"
+
+msgid "Langue"
+msgstr "Language"
+
+msgid "Langue du contenu"
+msgstr "Content language"
+
+msgid "Canal"
+msgstr "Channel"
+
+msgid "Support de diffusion"
+msgstr "Channel of distribution"
+
+msgid "Cible"
+msgstr "Target"
+
+msgid "Segment d'audience"
+msgstr "Audience segment"
+
+msgid "Projet"
+msgstr "Project"
+
+msgid "Liste les contenus liés au projet sélectionné"
+msgstr "List contents related to the selected project"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Etat de workflow des contenus"
+msgstr "Content workflow state"
+
+msgid "Type de contenu"
+msgstr "Content Type"
+
+msgid "Gabarit de contenus"
+msgstr "Content template"
+
+msgid "Membre"
+msgstr "Member"
+
+msgid "Membre du projet"
+msgstr "Project member"
+
+msgid "Responsable canal"
+msgstr "Channel owner"
+
+msgid "Affiche les objets liés aux canaux dont cette personne est responsable"
+msgstr ""
+"Displays the objects related to the channels for which this person is owner"
+
+msgid "État du projet"
+msgstr "Project state"
+
+msgid "Etat de production du projet"
+msgstr "Production state of the project"
+
+msgid "Exactement le"
+msgstr "Exactly on"
+
+msgid "Date de publication exactement le"
+msgstr "Publication date exactly on"
+
+msgid "Créé à partir de"
+msgstr "Created from"
+
+msgid "Projet créé à partir de cette date"
+msgstr "Project created since this date"
+
+msgid "Créateur-trice du média"
+msgstr "Creator of the media"
+
+msgid "Dernière modification sur le média"
+msgstr "Last update of the media"
+
+msgid "Image, Pdf, ..."
+msgstr "Image, Pdf, ..."
+
+msgid "Créateur-trice du canal"
+msgstr "Creator of the channel"
+
+msgid "Dernière modification sur le canal"
+msgstr "Last update of the channel"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Type de canal"
+msgstr "Channel Type"
+
+msgid "Responsable du canal"
+msgstr "Channel Manager"
+
+msgid "Créateur-trice du projet"
+msgstr "Creator of the project"
+
+msgid "Dernière modification sur le projet"
+msgstr "Last update of the project"
+
+msgid "Début après le"
+msgstr "Start after this date"
+
+msgid "Date de début de projet supérieure ou égale à ce filtre"
+msgstr "Project start date greater than or equal to this filter"
+
+msgid "Fin avant le"
+msgstr "End before"
+
+msgid "Date de fin de projet inférieure ou égale à ce filtre"
+msgstr "Project end date less than or equal to this filter"
+
+msgid "Responsable du projet"
+msgstr "Project owner"
+
+msgid "Priorité"
+msgstr "Priority"
+
+msgid "Catégorie"
+msgstr "Category"
+
+msgid "Tag"
+msgstr "Tag"
+
+msgid "Etiquette/Tag"
+msgstr "Tag"
+
+msgid "Etat de proposition"
+msgstr "Proposal status"
+
+msgid "Créateur-trice du contenu"
+msgstr "Creator of the content"
+
+msgid "Dernière modification sur le contenu"
+msgstr "Last update on the content"
+
+msgid "Tags"
+msgstr "Tags"
+
+msgid "Après le"
+msgstr "After"
+
+msgid "Date de publication supérieure ou égale à"
+msgstr "Publication date greater than or equal to"
+
+msgid "Avant le"
+msgstr "Before"
+
+msgid "Date de publication inférieure ou égale à"
+msgstr "Publication date less than or equal to"
+
+msgid "Responsable du contenu"
+msgstr "Content owner"
+
+msgid "Responsable projet"
+msgstr "Project manager"
+
+msgid ""
+"Affiche les contenus liés aux projets dont cette personne est responsable"
+msgstr ""
+"Displays the content related to the projects for which this person is "
+"responsible"
+
+msgid "Période"
+msgstr "Period"
+
+msgid "Date de publication durant les x jours glissants suivants"
+msgstr "Date of publication during the next rolling x days"
+
+msgid "Créateur-trice du projet/contenu"
+msgstr "Creator of the project/content"
+
+msgid "Dernière modification sur le projet/contenu"
+msgstr "Last update on the project/content"
+
+msgid "Responsable (Projet)"
+msgstr "Owner (Project)"
+
+msgid "Projet dont le responsable est..."
+msgstr "Project which the owner is..."
+
+msgid "Responsable (Contenu)"
+msgstr "Owner (Content)"
+
+msgid "Contenu dont le responsable est..."
+msgstr "Content which the owner is..."
+
+msgid "Responsable (Tâche)"
+msgstr "Owner (Task)"
+
+msgid "Tâche dont le responsable est..."
+msgstr "Task which the owner is..."
+
+msgid "Priorité (Projet)"
+msgstr "Priority (Project)"
+
+msgid "Catégorie (Projet)"
+msgstr "Category (Project)"
+
+msgid "Tag (Projet)"
+msgstr "Tag (Project)"
+
+msgid "Tag (Contenu)"
+msgstr "Tag (Content)"
+
+msgid "Canaux"
+msgstr "Channels"
+
+msgid "date/time submitted"
+msgstr "date/time submitted"
+
+msgid "date/time edited"
+msgstr "date/time edited"
+
+msgid "date/time deleted"
+msgstr "date/time deleted"
+
+msgid "Data"
+msgstr "Data"
+
+msgid "Abonnement"
+msgstr "Subscription"
+
+msgid "Organisation"
+msgstr "Organization"
+
+msgid "Actif"
+msgstr "Active"
+
+msgid ""
+"Un desk non actif n'est plus utilisable, les utilisateurs ne peuvent plus "
+"s'y connecter"
+msgstr "An inactive desk is not usable anymore, users cannot login"
+
+msgid "Logo"
+msgstr "Logo"
+
+msgid "Langues de contenus activées"
+msgstr "Language mode activated"
+
+msgid ""
+"Indique si les utilisateurs du desk peuvent flagguer les contenus avec une "
+"langue"
+msgstr "Indicates whether users can mark content with language"
+
+msgid "Langues autorisées pour marquer les contenus"
+msgstr "Languages ​​permitted to mark the content"
+
+msgid ""
+"Code langue sous la forme 'fr_FR'. Le premier code est la langue par défaut."
+msgstr "Language code as ' en_US ' . The first code is the default language"
+
+msgid "Items privés activés"
+msgstr "Set private items activated"
+
+msgid "Indique si les utilisateurs du desk peuvent rendre un item privé"
+msgstr "Indicates whether users can mark an item as private"
+
+msgid "Afficher par défaut tous les champs des formulaires de créations"
+msgstr "Display by default all the fields in creation forms"
+
+msgid "Type d'abonnement"
+msgstr "Subscription Plan"
+
+msgid ""
+"Pour les orga facturée en manuel, le prix affiché à l'admin du compte.Valeur "
+"d'affichage uniquement, aucun impact sur la facturation réelle."
+msgstr ""
+
+msgid "Abonnement arrêté"
+msgstr ""
+
+msgid "Indique si l'utilisateur a demandé la fin de son abonnement"
+msgstr ""
+
+msgid "Desks"
+msgstr "Desks"
+
+msgid "Aucun"
+msgstr "None"
+
+msgid "Cet utilisateur n'est pas autorisé à se connecter à ce desk"
+msgstr "This user is not allowed to connect to this desk"
+
+msgid "Ce compte est inactif"
+msgstr "This account is not active"
+
+msgid "Invalid token."
+msgstr "Invalid token."
+
+msgid "Token"
+msgstr "Token"
+
+#, python-brace-format
+msgid "Type de contenu personnalisé: {name}"
+msgstr "Custom content type: {name}"
+
+msgid ""
+"Avec ce type de contenu, ajoutez des PDFs ou des images en tant que contenu, "
+"et versionnez ou annotez-les ( comme du texte )"
+msgstr ""
+"With this type of content, add PDFs or images as content and version or "
+"annotate them (just like text)"
+
+msgid "Content data"
+msgstr "Contenu"
+
+#, python-format
+msgid "Télécharger (%(size)s) : %(link)s"
+msgstr "Download (%(size)s) : %(link)s"
+
+msgid "Champ texte (une ligne)"
+msgstr "Text field (one line)"
+
+msgid "Un champ texte simple, sur une seule ligne"
+msgstr "A simple text field, on a single line"
+
+msgid "Champ texte (multiligne)"
+msgstr "Text field (multiline)"
+
+msgid ""
+"Un champ texte (textarea) sur plusieurs lignes. Supporte uniquement le "
+"format texte, pas HTML"
+msgstr ""
+"A text field (textarea) on several lines. Supports text format only, not HTML"
+
+msgid "Editeur de texte"
+msgstr "Text editor"
+
+msgid "Editeur de texte riche avec mise en forme, annotations, etc .."
+msgstr "Rich text editor with formatting, annotations, etc...."
+
+msgid "Média"
+msgstr "Media"
+
+msgid "Un média"
+msgstr "A media"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Un champ de saisie avec validation spécifique pour les emails"
+msgstr "An input field with specific validation for emails"
+
+msgid "Nombre entier"
+msgstr "Integer number"
+
+msgid "Un champ de saisie avec validation spécifique pour un nombre"
+msgstr "An input field with specific validation for a number"
+
+msgid "Menu déroulant"
+msgstr "Drop-down menu"
+
+msgid "Menu déroulant à choix unique"
+msgstr "Single choice drop-down menu"
+
+msgid "Boutons Radios"
+msgstr "Radios Buttons"
+
+msgid "Case à cocher multiples"
+msgstr "Multiple checkboxes"
+
+msgid "Sélection multiples"
+msgstr "Multiple selection"
+
+msgid "Autocomplétion"
+msgstr "Autocompletion"
+
+msgid "Menu déroulant avec autocomplétion"
+msgstr "Drop-down menu with autocompletion"
+
+msgid "Texte d'aide"
+msgstr "Help text"
+
+msgid "Editeur facebook"
+msgstr "Facebook Editor"
+
+msgid "Editeur de texte avec validations spécifiques à Facebook"
+msgstr "Text editor with Facebook-specific validations"
+
+msgid "Editeur twitter"
+msgstr "Twitter editor"
+
+msgid "Editeur de texte avec validations spécifiques à Twitter"
+msgstr "Text editor with Twitter-specific validations"
+
+msgid "Schema"
+msgstr "Schema"
+
+msgid "Schema des metadata"
+msgstr "Metadata schema"
+
+msgid "Nom d'icône"
+msgstr "Icon name"
+
+msgid "Types de contenu"
+msgstr "Content types"
+
+msgid "ItemType serialized data"
+msgstr "ItemType serialized data"
+
+msgid "Snapshot type de contenu"
+msgstr "Snapshot content type"
+
+msgid "Snapshots types de contenu"
+msgstr "Snapshots types de contenu"
+
+msgid "Cet item est privé"
+msgstr "This item is private"
+
+#, python-brace-format
+msgid "Expected a dictionary of items but got type \"{input_type}\"."
+msgstr "Expected a dictionary of items but got type \"{input_type}\"."
+
+msgid "Contenu"
+msgstr "Content"
+
+msgid "Date de publication prévue"
+msgstr "Planned publication date "
+
+msgid "Publication effective"
+msgstr "Actual publication date"
+
+msgid "Nombre"
+msgstr "Number"
+
+msgid "Contenu privé ?"
+msgstr "Private content"
+
+msgid ""
+"Ce contenu sera uniquement accessible par vous, un administrateur ou un des "
+"responsables du contenu"
+msgstr "Only you, an admin, or content owner(s) can access this content"
+
+msgid "Annotations"
+msgstr "Annotations"
+
+msgid "Versions d'édition des champs"
+msgstr "Field versions"
+
+msgid "Dernier éditeur"
+msgstr "Last Editor"
+
+msgid "Mise à jour du contenu à"
+msgstr "Item content updated at"
+
+msgid "Responsables"
+msgstr "Owners"
+
+msgid "Cibles"
+msgstr "Targets"
+
+msgid "Fichiers liés"
+msgstr "Attached files"
+
+msgid "Traduction master"
+msgstr "Traduction master"
+
+msgid "Copié depuis"
+msgstr "Copied from"
+
+msgid "État de workflow"
+msgstr "Workflow state"
+
+msgid "Verrouillé"
+msgstr "Locked"
+
+msgid "Verrouillé à"
+msgstr "Locked at"
+
+msgid "Verrouillé par"
+msgstr "Locked by"
+
+msgid "Commentaire verrouillage"
+msgstr "Lock comment"
+
+msgid "Editeurs"
+msgstr "Editors"
+
+msgid "Début"
+msgstr "Start"
+
+msgid "Fin"
+msgstr "End"
+
+msgid "Restauré à partir de"
+msgstr "Restored from"
+
+msgid "Version majeure"
+msgstr "Major version"
+
+msgid "Version mineure"
+msgstr "Minor version"
+
+msgid "Version"
+msgstr "Version"
+
+msgid "Versions"
+msgstr "Versions"
+
+msgid "Nombre de contenus créés"
+msgstr "Total contents created"
+
+msgid "Items Stats"
+msgstr "Item statistics"
+
+msgid "Seul le créateur du filtre peut le supprimer"
+msgstr "Only the creator of the filter can delete id"
+
+msgid "Permission refusée"
+msgstr "Not allowed"
+
+msgid "Vous ne pouvez partager que vos filtres"
+msgstr "You can only share your own filters"
+
+msgid "Merci de renseigner au moins un utilisateur"
+msgstr "Please fill at least one user"
+
+msgid "Export de filtre terminé"
+msgstr "Export of a filter completed"
+
+#, python-brace-format
+msgid ""
+"L'export du filtre {saved_filter.title} que vous avez demandé est terminé. "
+"<a href='{export_url}'>Cliquez ici pour le télécharger</a>"
+msgstr ""
+"The export of the filter {saved_filter.title} has completed. <a "
+"href='{export_url}'>Click here to download it</a>"
+
+msgid "Calendrier"
+msgstr "Calendar"
+
+msgid "Liste"
+msgstr "List"
+
+msgid "Prochaines 24h"
+msgstr "Next 24h"
+
+msgid "7 prochains jours"
+msgstr "Upcoming 7 days"
+
+msgid "30 prochains jours"
+msgstr "Upcoming 30 days"
+
+msgid "90 prochains jours"
+msgstr "Upcoming 90 days"
+
+msgid "Utilisateur"
+msgstr "User"
+
+msgid "Query string du filtre"
+msgstr "Filter query string"
+
+msgid "Champ technique pour le NotificationFeed"
+msgstr "Technical fioeld for the NotificationFeed"
+
+msgid "Item Saved Filter"
+msgstr "Item Saved Filter"
+
+msgid "Items Saved Filters"
+msgstr "Items Saved Filters"
+
+msgid "Saved filter"
+msgstr "Saved filter"
+
+msgid "Destinataires"
+msgstr "Recipients"
+
+msgid "Message"
+msgstr "Message"
+
+msgid "Internal Shared Filter"
+msgstr "Internal Shared Filter"
+
+msgid "Internal Shared Filters"
+msgstr "Internal Shared Filters"
+
+msgid "Envoyer à cette adresse (une seule)"
+msgstr "Send to this email (only one)"
+
+msgid "Mot de passe"
+msgstr "Password"
+
+msgid ""
+"Un mot de passe (optionnel) pour protéger le calendrier (sera indiqué dans "
+"l'email avec l'url de partage"
+msgstr ""
+"A password (optional ) to protect the calendar ( will be shown in the email "
+"with the sharing URL)"
+
+msgid ""
+"Les contenus dans le calendrier ne seront pas cliquables si cette case est "
+"cochée"
+msgstr "The contents in the calendar will not be clickable if checked"
+
+msgid "Public Shared Filter"
+msgstr "Public Shared Filter"
+
+msgid "Public Shared Filters"
+msgstr "Public Shared Filter"
+
+#, python-brace-format
+msgid "{0} partagé avec {1}"
+msgstr "{0} shared with {1}"
+
+msgid "Affichage"
+msgstr "Display"
+
+msgid "Film (web)"
+msgstr "Movie (web)"
+
+msgid "Film (TV)"
+msgstr "Movie (TV)"
+
+msgid "Print (Magazine)"
+msgstr "Print (Magazine)"
+
+msgid "Print (Dépliant)"
+msgstr "Print (leaflet)"
+
+msgid "Web"
+msgstr "Web"
+
+msgid "Sites web"
+msgstr "Websites"
+
+msgid "Print"
+msgstr "Print"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Twitter"
+msgstr "Twitter"
+
+msgid "Evènement"
+msgstr "Event"
+
+msgid "Priorité haute"
+msgstr "High priority"
+
+msgid "Priorité moyenne"
+msgstr "Medium priority"
+
+msgid "Priorité normale"
+msgstr "Normal priority"
+
+msgid "Couleur"
+msgstr "Color"
+
+msgid "Couleur de fond"
+msgstr "Background color"
+
+msgid "Type de cible"
+msgstr "Target type"
+
+msgid "Ordre"
+msgstr "Order"
+
+msgid "label"
+msgstr "label"
+
+msgid "Tri"
+msgstr "Sort"
+
+msgid "Colonnes"
+msgstr "Columns"
+
+msgid "List Config"
+msgstr "List Config"
+
+msgid ""
+"Votre navigateur ne semble pas accepter les cookies. Les cookies sont "
+"obligatoires."
+msgstr "Your browser does not appear to accept cookies. Cookies are required."
+
+msgid ""
+"Mot de passe incorrect. Merci de noter que les mots de passe sont sensibles "
+"à la casse."
+msgstr "Incorrect password. Please note that passwords are case sensitive ."
+
+msgid "Tableau de bord"
+msgstr "Dashboard"
+
+msgid "Médias"
+msgstr "Medias"
+
+msgid "Admin"
+msgstr "Admin"
+
+msgid "navbar"
+msgstr "navbar"
+
+msgid "content"
+msgstr "content"
+
+msgid "request form"
+msgstr "request form"
+
+msgid "Extra Actions"
+msgstr "Extra Actions"
+
+msgid "Filters"
+msgstr "Filters"
+
+msgid "main content"
+msgstr "main content"
+
+msgid "request info"
+msgstr "request info"
+
+msgid "response info"
+msgstr "response info"
+
+msgid "Un mot de passe est nécessaire"
+msgstr "Password is required"
+
+msgid "Cette page est protégée par un mot de passe"
+msgstr "This page is protected by a password"
+
+msgid "Valider"
+msgstr "Save"
+
+msgid ""
+"Javascript est désactivé sur ce navigateur, l'application ne peut pas "
+"fonctionner correctement. Vérifiez les paramètres de votre navigateur ou "
+"changez de navigateur"
+msgstr ""
+"Javascript is not activated on this browser, the application cannot work "
+"properly. Please check your browser settings, or change browser."
+
+msgid "Release"
+msgstr "Release"
+
+msgid "Downtime"
+msgstr "Downtime"
+
+msgid "Usage interne uniquement, non affiché aux utilisateurs"
+msgstr "Internal usage only, not shown to the users"
+
+msgid "Users"
+msgstr "Users"
+
+msgid "Type de message"
+msgstr "Message Type"
+
+msgid "Content"
+msgstr "Content"
+
+msgid "Lu le"
+msgstr "Read on"
+
+msgid "Merci de confirmer votre email"
+msgstr "Please confirm your email"
+
+msgid "Cliquez ici pour vérifier votre email"
+msgstr "Click here to verify your email"
+
+msgid ""
+"Bienvenue sur Pilot ! Une dernière étape avant de rejoindre votre compte"
+msgstr "Welcome to Pilot ! Last step before on-boarding."
+
+msgid "Récupération de mot de passe"
+msgstr "Password recovery"
+
+msgid "Créer un nouveau mot de passe"
+msgstr "Create new password"
+
+msgid "Nouveau mot de passe"
+msgstr "New password"
+
+#, python-brace-format
+msgid "Invitation - {sender_full_name} vous propose de le rejoindre"
+msgstr "Invitation - {sender_full_name} invite you to join"
+
+#, python-brace-format
+msgid "Rejoindre {sender_full_name} sur Pilot"
+msgstr "Join {sender_full_name} on Pilot"
+
+msgid "Réactivation de compte"
+msgstr "Account reactivated"
+
+msgid "Accéder à la page de connexion"
+msgstr "Go to the login page"
+
+msgid "Compte réactivé"
+msgstr "Account reactivated"
+
+msgid "Accèder au contenu"
+msgstr "Go to the contents"
+
+msgid "Accèder aux contenus"
+msgstr "Go to the contents"
+
+#, python-brace-format
+msgid "Partage de contenu par {sender_full_name}"
+msgstr "Content shared by {sender_full_name}"
+
+#, python-brace-format
+msgid "Activité sur {target_text} : {verb_display} par {actor_display}"
+msgstr "Activity on {target_text} : {verb_display} by {actor_display}"
+
+#, python-brace-format
+msgid "Activité sur {target_text}"
+msgstr "Activity on {target_text}"
+
+#, python-brace-format
+msgid "Voir {target_text}"
+msgstr "See {target_text}"
+
+#, python-brace-format
+msgid ""
+"[Entrée dans le filtre] Le contenu \"{item}\" a été ajouté au filtre \"{feed."
+"saved_filter}\""
+msgstr ""
+"[Added to filter] The content \"{item}\" has been added to the filter "
+"\"{feed.saved_filter}\""
+
+#, python-brace-format
+msgid "Activité sur \"{feed.saved_filter}\""
+msgstr "Activity on \"{feed.saved_filter}\""
+
+#, python-brace-format
+msgid ""
+"[Sortie du filtre] Le contenu \"{item}\" a été retiré du filtre \"{feed."
+"saved_filter}\""
+msgstr ""
+"[Removed from filter] The content \"{item}\" has been removed from the "
+"filter \"{feed.saved_filter}\""
+
+#, python-brace-format
+msgid ""
+"[Mise à jour] Contenu \"{item}\" appartenant au filtre \"{feed."
+"saved_filter}\""
+msgstr ""
+"[Update] Content \"{item}\" belonging to the filter \"{feed.saved_filter}\""
+
+#, python-brace-format
+msgid "Voir {feed.saved_filter}"
+msgstr "See {feed.saved_filter}"
+
+msgid "Type de notification"
+msgstr "Notification type"
+
+msgid "Notification envoyée par"
+msgstr "Notification send by"
+
+msgid "Notification envoyée à"
+msgstr "Notification send at"
+
+msgid "Contenu de la notification"
+msgstr "Notification content"
+
+msgid "Object concerné"
+msgstr "Object"
+
+msgid "Content type de l'objet concerné"
+msgstr "Content type of the object"
+
+msgid "URL cible"
+msgstr "target URL"
+
+msgid "Notification lue ?"
+msgstr "Notification read ?"
+
+msgid "Notification envoyée par un flux"
+msgstr "Notification send by a stream"
+
+msgid "Activity Stream"
+msgstr "Activity Stream"
+
+msgid "Abonné"
+msgstr "Subscriber"
+
+msgid "Type de flux"
+msgstr "Stream type"
+
+msgid "Envoyer un email ?"
+msgstr "Send an email ?"
+
+msgid "Afficher la notification in-app ?"
+msgstr "Display the in-app notification ?"
+
+msgid "Task deadline"
+msgstr "Task deadline"
+
+msgid "Asset right expiry"
+msgstr "Asset right expiry"
+
+msgid "Heures"
+msgstr "Hours"
+
+msgid "Jours"
+msgstr "Days"
+
+msgid "Semaines"
+msgstr "Weeks"
+
+msgid "Notification envoyée ?"
+msgstr "Notification send ?"
+
+msgid "Objet notification créé"
+msgstr "Created notification object"
+
+msgid "Rappel annulé ?"
+msgstr "Reminder cancelled ?"
+
+msgid "Type de rappel"
+msgstr "Reminder Type"
+
+msgid "Target task"
+msgstr "Target task"
+
+msgid "Target asset right"
+msgstr "Target asset right"
+
+msgid "Unité du délai"
+msgstr "Unit of the period"
+
+msgid "Valeur du délai"
+msgstr "Value of the period"
+
+msgid "Date-heure de déclenchement de la notification de rappel"
+msgstr "Datetime of the reminder deadline"
+
+msgid "Voir le détail"
+msgstr "See details"
+
+msgid ""
+"Vous pouvez laisser un commentaire en répondant directement à cet e-mail"
+msgstr "You can leave a comment by answering directly to this email"
+
+#, python-brace-format
+msgid "@mention sur #{instance.id} {instance}"
+msgstr "@mention on #{instance.id} {instance}"
+
+msgid "Voir le commentaire sur Pilot"
+msgstr "See comment in Pilot"
+
+msgid "@mention sur #{item.id} {item} [{item.project}]"
+msgstr "@mention on #{item.id} {item} [{item.project}]"
+
+msgid "Voir l'annotation sur Pilot"
+msgstr "See annotation in Pilot"
+
+#, python-brace-format
+msgid ""
+"{author} vous a assigné une tâche ({task.name}) sur le {object_type} "
+"#{linked_object.id} {linked_object}"
+msgstr ""
+"{author} assigned you a task ({task.name}) on the {object_type} "
+"#{linked_object.id} {linked_object}"
+
+#, python-brace-format
+msgid "Nouvelle tâche sur #{linked_object.id} {linked_object}"
+msgstr "New task on content #{linked_object.id} {linked_object}"
+
+msgid "Voir le détail de la tâche"
+msgstr "See task details"
+
+#, python-brace-format
+msgid ""
+"{author} a modifié une tâche ({task.name}) sur le {object_type} "
+"#{linked_object.id} {linked_object}"
+msgstr ""
+"{author} assigned you a task ({task.name}) on the {object_type} "
+"#{linked_object.id} {linked_object}"
+
+#, python-brace-format
+msgid "Tâche modifiée sur #{linked_object.id} {linked_object}"
+msgstr "Task completed on #{linked_object.id} {linked_object}"
+
+#, python-brace-format
+msgid ""
+"{author} vient de terminer une tâche sur le {object_type} #{linked_object."
+"id} {linked_object}. Nous vous tenons au courant car vous êtes responsable "
+"(ou parmi les responsables) de la tâche suivante ({task.name})"
+msgstr ""
+"{author} just completed a task on the {object_type} #{linked_object.id}  "
+"{linked_object}. We keep you informed because you are responsible (or one "
+"responsible) for the following task ({task.name})"
+
+#, python-brace-format
+msgid "Tâche réalisée sur #{linked_object.id} {linked_object}"
+msgstr "Task completed on #{linked_object.id} {linked_object}"
+
+#, python-brace-format
+msgid ""
+"{author} a supprimé une tâche sur le {object_type} #{linked_object.id} "
+"{linked_object}, sur laquelle vous étiez assigné(e) ({task.name})"
+msgstr ""
+"{author} deleted a task on the {object_type} #{linked_object.id} "
+"{linked_object}, on which you were assigned ({task.name})"
+
+#, python-brace-format
+msgid "Tâche supprimée sur #{linked_object.id} {linked_object}"
+msgstr "Task deleted on #{linked_object.id} {linked_object}"
+
+#, python-brace-format
+msgid "Voir le {object_type}"
+msgstr "See the {object_type}"
+
+#, python-brace-format
+msgid ""
+"Rappel : La tâche {target_display} est à effectuer pour {target_date_time}"
+msgstr "Reminder : The task {target_display} is to do for {target_date_time}"
+
+#, python-brace-format
+msgid "Rappel : Les droits de {target_display} expirent {target_date_time}"
+msgstr ""
+"Reminder : The usage rights of {target_display} expire {target_date_time}"
+
+#, python-brace-format
+msgid "Rappel : {target_display} pour {target_date_time}"
+msgstr "Reminder : {target_display} for {target_date_time}"
+
+#, python-brace-format
+msgid "{sender} a partagé le filtre \"{saved_filter}\""
+msgstr "{sender} shared the filter \"{saved_filter}\""
+
+msgid "Voir le filtre sur Pilot"
+msgstr "See the filter on Pilot"
+
+msgid ""
+"Pour le retrouver facilement, vous pouvez copier ce filtre dans vos filtres "
+"personnels."
+msgstr "You can copy it in you personnal filters for an easy access."
+
+msgid "Approbation de contenu partagé"
+msgstr "Shared content approved"
+
+msgid "approuvé"
+msgstr "approved"
+
+msgid "Rejet de contenu partagé"
+msgstr "Shared content rejected"
+
+msgid "rejeté"
+msgstr "rejected"
+
+msgid "Contenu partagé édité"
+msgstr "Shared content edited"
+
+msgid "édité"
+msgstr "edited"
+
+#, python-brace-format
+msgid "{reviewer_email} a {verdict} le contenu {title}"
+msgstr "{reviewer_email} has {verdict} the content {title}"
+
+#, python-brace-format
+msgid "Accèder au contenu {title}"
+msgstr "Access to content {title}"
+
+#, python-brace-format
+msgid "Votre proposition de {object_type} a été {verdict}"
+msgstr "Your {object_type} proposal has been {verdict}"
+
+msgid "validée"
+msgstr "validated"
+
+msgid "rejetée"
+msgstr "rejected"
+
+#, python-brace-format
+msgid "Votre proposition de {object_type} \"{object_name}\" a été {verdict}."
+msgstr "Your suggestion of {object_type} \"{object_name}\" has been {verdict}."
+
+#, python-format
+msgid ""
+"\n"
+"Bonjour,\n"
+"\n"
+"Votre proposition de %(object_type)s \"%(object_name)s\" a été %(verdict)s.\n"
+msgstr ""
+"\n"
+"Hello,\n"
+"\n"
+"Your suggestion of %(object_type)s \"%(object_name)s\" has been "
+"%(verdict)s.\n"
+
+msgid "Bonjour"
+msgstr "Hello"
+
+msgid ""
+"Vous recevez cet email suite à une demande de changement de mot de passe "
+"pour votre compte sur Pilot"
+msgstr ""
+"You receive this email because someone requested a new password for your "
+"account on Pilot"
+
+#, python-format
+msgid ""
+"\n"
+"Bonjour %(full_name)s,\n"
+"\n"
+"Votre compte Pilot @%(username)s a été réactivé sur le desk %(desk)s par "
+"l'administrateur @%(reactivated_by)s\n"
+"\n"
+"Si vous avez oublié votre mot de passe, cliquez sur le lien \"Mot de passe "
+"oublié?\" de la page de connexion.\n"
+msgstr ""
+"\n"
+"Hello %(full_name)s,\n"
+"\n"
+"You Pilot account @%(username)s has been reactivated on the desk %(desk)s by "
+"the admin @%(reactivated_by)s\n"
+"\n"
+"If you forgot your password, click on the link \"Password forgotten?\" from "
+"the login page.\n"
+
+msgid "Son commentaire:"
+msgstr "His/Her comment:"
+
+msgid "Vous pouvez éditer le contenu"
+msgstr "You can edit the content"
+
+msgid ""
+"Ce partage est en lecture seule, mais vous pouvez valider ou rejeter le "
+"contenu"
+msgstr "This sharing is read-only, but you can validate ou reject the content"
+
+msgid "Tâche à faire pour le"
+msgstr "Task to do for the"
+
+msgid ""
+"\n"
+"Bonjour,\n"
+"\n"
+"%(sender_full_name)s vous invite à rejoindre son équipe sur Pilot.\n"
+"\n"
+"Merci de cliquer sur le bouton ci-dessous pour confirmer votre email et "
+"terminer votre inscription.\n"
+msgstr ""
+"\n"
+"Hello,\n"
+"\n"
+"%(sender_full_name)s invites you to join the team on Pilot.\n"
+"\n"
+"Please click the button below to confirm your e-mail and complete your "
+"registration.\n"
+
+msgid "a partagé avec vous son filtre"
+msgstr "shared a filter with you"
+
+msgid "vous a mentionné dans une annotation sur"
+msgstr "mentioned you in a annotation on"
+
+msgid "vous a mentionné dans un commentaire sur"
+msgstr "mentioned you in a comment on"
+
+msgid "a partagé du contenu avec vous"
+msgstr "has shared some content with you"
+
+msgid "Voici le détail de son message d'absence :"
+msgstr "Here's the detail of the away message"
+
+msgid "En cas de problème vous pouvez aussi cliquer sur ce lien"
+msgstr "If this email does not display correctly please click this link"
+
+msgid ""
+"Ce message est une notification automatique envoyée par l'application Pilot."
+msgstr "This message is an automatic notification sent by application Pilot."
+
+msgid "Cliquez ici pour gérer vos alertes"
+msgstr "Click here to manage your notifications"
+
+msgid "Pour gérer vos alertes, rendez-vous sur"
+msgstr "To manage your notifications, visit"
+
+msgid "Notifications"
+msgstr "Updates"
+
+msgid "L'utilisateur {} n'est pas le destinataire de cette notification"
+msgstr "User {} is not the recipient of this notification"
+
+msgid "La cible de cette notification n'existe plus"
+msgstr "The target of this notification does not exists anymore"
+
+#, python-brace-format
+msgid "Vous avez notifié {recipient} sur Pilot"
+msgstr "You have notified {recipient} through Pilot"
+
+#, python-brace-format
+msgid "Vous avez contacté {recipient} depuis Pilot"
+msgstr "You have contacted {recipient} through Pilot"
+
+msgid "mais cette personne est actuellement absente"
+msgstr "but this contact is currently away"
+
+msgid ""
+"mais l'adresse email revient en erreur, il y a peut-être une erreur de frappe"
+msgstr "but the email address bounce back in error, there's maybe a typo"
+
+msgid ""
+"mais l'adresse email est temporairement injoignable, il faudra ré-essayer "
+"plus tard"
+msgstr ""
+"but the email address is currently unreachable, you'll need to try again "
+"later"
+
+#, python-brace-format
+msgid "Impossible de délivrer un email à {recipient}"
+msgstr "Cannot deliver an email to {recipient}"
+
+msgid "Facturation"
+msgstr "Billing"
+
+msgid ""
+"Une organisation non active n'est plus utilisable, les utilisateurs ne "
+"peuvent plus s'y connecter"
+msgstr ""
+
+msgid "Nombre maximum de desks"
+msgstr "Maximum desks number"
+
+msgid "Nom de facturation"
+msgstr "Billing name"
+
+msgid "Adresse de facturation"
+msgstr "Billig address"
+
+msgid "Code postal de facturation"
+msgstr "Billing zipcode"
+
+msgid "Ville de facturation"
+msgstr "Billing city"
+
+msgid "N° de TVA"
+msgstr "VAT number"
+
+msgid "Facturation manuelle"
+msgstr ""
+
+msgid ""
+"Indique si cette organisation est facturée manuellement (pas de stripe auto)"
+msgstr ""
+
+msgid "Stripe customer id"
+msgstr "Stripe customer id"
+
+msgid "Stripe subscription id"
+msgstr "Stripe subscription id"
+
+msgid "Acceptation CGV"
+msgstr ""
+
+msgid "Date/heure de clic sur la checkbox d'acceptation des CGV"
+msgstr ""
+
+msgid "Organization"
+msgstr "Organization"
+
+msgid "Organizations"
+msgstr "Organizations"
+
+msgid "Orphelin ( rattaché à aucun desk )"
+msgstr "Orphan ( linked to no desk )"
+
+msgid "Informations personnelles"
+msgstr "Personal informations"
+
+msgid "Permissions"
+msgstr "Permissions"
+
+msgid "Dates importantes"
+msgstr "Important dates"
+
+#, python-format
+msgid "Changer le mot de passe de: %s"
+msgstr "Change %s password"
+
+msgid "A user with that username already exists."
+msgstr "A user with that username already exists."
+
+msgid "The two password fields didn't match."
+msgstr "The two password fields didn't match."
+
+msgid "Username"
+msgstr "Username"
+
+msgid "160 characters or fewer. Letters, numbers and _ character."
+msgstr "160 characters or fewer. Letters, numbers and _ character."
+
+msgid "This value may contain only letters, numbers and _ character."
+msgstr "This value may contain only letters, numbers and _ character."
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Password confirmation"
+msgstr "Password confirmation"
+
+msgid "Enter the same password as above, for verification."
+msgstr "Enter the same password as above, for verification."
+
+msgid ""
+"Raw passwords are not stored, so there is no way to see this user's "
+"password, but you can change the password using <a href=\"password/\">this "
+"form</a>."
+msgstr ""
+"Raw passwords are not stored, so there is no way to see this user's "
+"password, but you can change the password using <a href=\"password/\">this "
+"form</a>."
+
+msgid "Email déjà existant sur ce desk"
+msgstr "Email exists on this desk"
+
+msgid "Vous ne pouvez pas changer vos propres permissions"
+msgstr "You cannot change your own permissions"
+
+msgid "Vous ne pouvez pas désactiver votre propre compte"
+msgstr "You cannot deactivate your own account"
+
+msgid "Veuillez accepter les CGU pour continuer"
+msgstr "Please accept the terms of service to continue"
+
+#, python-brace-format
+msgid "L'email \"{0}\" est déjà utilisé. Merci d'en choisir un autre."
+msgstr "The email \"{0}\" is already in use. Please choose another one."
+
+msgid "Ces informations de connexion ne sont pas reconnues."
+msgstr "Those credentials are not valid."
+
+msgid "This account is inactive."
+msgstr "This account is inactive."
+
+msgid "Your old password was entered incorrectly. Please enter it again."
+msgstr "Your old password was entered incorrectly. Please enter it again."
+
+#, python-brace-format
+msgid "Le nom d'utilisateur \"{0}\" existe déjà. Merci d'en choisir un autre."
+msgstr "The Username \"{0}\" already exists. Please choose another one."
+
+#, python-brace-format
+msgid "Le nom d'équipe \"{0}\" existe déjà. Merci d'en choisir un autre."
+msgstr "The team name \"{0}\" already exists. Please choose another one."
+
+#, python-brace-format
+msgid ""
+"Le nom d'utilisateur \"{0}\" existe déjà. Pour éviter toute confusion, vous "
+"ne pouvez pas créer une équipe avec le même nom. Merci de choisir un autre "
+"nom d'équipe, ou supprimer cet utilisateur"
+msgstr ""
+"The username \"{0}\" already exists. To avoid any confusion, you cannot "
+"create a team with the same name. Please chose another team name, or delete "
+"this user."
+
+msgid "Administrateur"
+msgstr "Administrator"
+
+msgid "Éditeur"
+msgstr "Editor"
+
+msgid "Éditeur restreint"
+msgstr "Restricted editor"
+
+msgid "Le nom ne peut contenir que des lettres sans accent, chiffres et \"_\""
+msgstr "The name can only contains unaccentuated letters, numbers and \"_\" ."
+
+msgid "Nom d'équipe"
+msgstr "Team name"
+
+msgid "160 caractères maximum. Lettres, nombre et \"_\" ."
+msgstr "160 characters or fewer. Letters, numbers and \"_\" ."
+
+msgid "Equipe"
+msgstr "Team"
+
+msgid "Equipes"
+msgstr "Teams"
+
+msgid "Prénom"
+msgstr "First name"
+
+msgid "Adresse email"
+msgstr "Email adress"
+
+msgid "Nom d'utilisateur"
+msgstr "Username"
+
+msgid "Langue de l'interface"
+msgstr "Interface language"
+
+msgid "Fuseau horaire"
+msgstr "Timezone"
+
+msgid "Avatar"
+msgstr "Avatar"
+
+msgid "superuser status"
+msgstr "superuser status"
+
+msgid ""
+"Designates that this user has all permissions without explicitly assigning "
+"them."
+msgstr ""
+
+msgid "Fait partie du staff"
+msgstr "Is staff member"
+
+msgid ""
+"Indique si l'utilisateur peut se connecter à l'interface d'administration"
+msgstr "Indicates whether the user can connect to admin interface"
+
+msgid "Wiped"
+msgstr "Wiped"
+
+msgid ""
+"Indique si l'utilisateur a subit un wipeout (suppression de ses données)"
+msgstr "Indicates whether the user has been wipeout ( deletion of its data )"
+
+msgid "Date d'inscription"
+msgstr "Registration date"
+
+msgid "Menu de connexion"
+msgstr "Login menu"
+
+msgid "Notification preferences"
+msgstr "Notification preferences"
+
+msgid "Téléphone"
+msgstr "Phone"
+
+msgid "Localisation"
+msgstr "Place"
+
+msgid "Métier"
+msgstr "Position"
+
+msgid "User"
+msgstr "User"
+
+msgid "Administre l'organisation"
+msgstr "Admin of the organization"
+
+msgid ""
+"Indique si l'utilisateur peut accéder à l'écran de gestion de facturation de "
+"l'organisation"
+msgstr ""
+"Indicates whether the user can manage the billing screen of the organization"
+
+msgid "Permission"
+msgstr "Permission"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Utilisé le"
+msgstr "Used"
+
+msgid "Utilisé"
+msgstr "Used"
+
+msgid "Invitation token"
+msgstr "Invitation token"
+
+msgid "Invitation tokens"
+msgstr "Invitation tokens"
+
+#, python-brace-format
+msgid "{0} pour le desk #{1}"
+msgstr "{0} for the desk #{1}"
+
+#, python-brace-format
+msgid ""
+"La copie du projet \"{source_project}\" que vous avez demandé est terminée"
+msgstr "The copy of the project \"{source_project}\" has completed"
+
+msgid "Copie de projet terminée"
+msgstr "Project copy has been completed"
+
+msgid "Voir le projet"
+msgstr "See project"
+
+msgid "Nombre de contenus"
+msgstr "Number of contents"
+
+msgid "Date de début"
+msgstr "Start date"
+
+msgid "Date de fin"
+msgstr "End date"
+
+msgid "Membres"
+msgstr "Members"
+
+msgid "Categorie"
+msgstr "Category"
+
+msgid "Créé par contact externe"
+msgstr "Created by external contact"
+
+msgid "Créé par token externe"
+msgstr "Created by external token"
+
+msgid "All Items XLS Export"
+msgstr "All Items XLS Export"
+
+msgid "All Projects XLS Export"
+msgstr "All Projects XLS Export"
+
+msgid "All Users XLS Export"
+msgstr "All Users XLS Export"
+
+msgid "Asset Export"
+msgstr "Asset Export"
+
+msgid "Copy Project"
+msgstr "Copy Project"
+
+msgid "Desk Export"
+msgstr "Desk Export"
+
+msgid "Hierarchy consistency"
+msgstr "Hierarchy consistency"
+
+msgid "Item Type Update"
+msgstr "Item Type Update"
+
+msgid "Mention Update"
+msgstr "Mention Update"
+
+msgid "Notify"
+msgstr "Notify"
+
+msgid "Saved Filter Export"
+msgstr "Saved Filter Export"
+
+msgid "En cours"
+msgstr "In progress"
+
+msgid "Démarré"
+msgstr "Started"
+
+msgid "Terminé"
+msgstr "Completed"
+
+msgid "Erreur"
+msgstr "Error"
+
+msgid "Impossible de lancer la tâche"
+msgstr "Cannot launch the task"
+
+msgid "Zombie"
+msgstr "Zombie"
+
+msgid "UUID utilisé par RQ"
+msgstr "UUID used by RQ"
+
+msgid "Type de job"
+msgstr "Job type"
+
+msgid "Etat"
+msgstr "State"
+
+msgid "Nombre d'essai"
+msgstr "Number of retry"
+
+msgid "Términé à"
+msgstr "Completed at"
+
+msgid "Approuvé"
+msgstr "Approved"
+
+msgid "Rejeté"
+msgstr "Rejected"
+
+msgid "Edité"
+msgstr "Edited"
+
+msgid "Un mot de passe (optionnel) pour protéger le partage."
+msgstr "A password (optional ) to protect the sharing."
+
+msgid "Message au destinataire"
+msgstr "Message to the recipients"
+
+msgid "Items editables"
+msgstr "Items editables"
+
+msgid "Accès désactivé"
+msgstr "Access deactivated"
+
+msgid "Partages"
+msgstr "Share"
+
+msgid "Partage vers {}"
+msgstr "Sharing to {}"
+
+msgid "Statut"
+msgstr "Status"
+
+msgid "Commentaire de relecture"
+msgstr "Feedback comment"
+
+msgid "Date de relecture"
+msgstr "Feedback date"
+
+msgid "Feedback de contenu"
+msgstr "Content feedback"
+
+msgid "Channel"
+msgstr "Channel"
+
+msgid "Twitter Account"
+msgstr "Twitter account"
+
+msgid "Facebook Account"
+msgstr "Facebook Account"
+
+msgid "Facebook Page"
+msgstr "Facebook Page"
+
+#, python-format
+msgid ""
+"Contenu trop long. Facebook autorise seulement %(limit_value)s signes "
+"( %(show_value)d signes saisis)"
+msgstr ""
+"Content too long. Facebook only allows %(limit_value)s  signs "
+"(%(show_value)d signs )"
+
+msgid "Erreur indéfinie"
+msgstr "Unknown error"
+
+msgid ""
+"La chaîne associée ne dispose pas des droits de publication nécessaires."
+msgstr "The channel associated lacks the necessary publication rights."
+
+msgid "La date de publication est dans le futur"
+msgstr "The publication date is in the future"
+
+msgid "Timeline utilisateur"
+msgstr "Timeline utilisateur"
+
+msgid "Page"
+msgstr "Page"
+
+msgid "Publié"
+msgstr "Published"
+
+msgid "Tweet Log"
+msgstr "Tweet Log"
+
+msgid "Tweet Logs"
+msgstr "Tweet Logs"
+
+msgid "Facebook Log"
+msgstr "Facebook Log"
+
+msgid "Facebook Logs"
+msgstr "Facebook Logs"
+
+msgid "Le canal associé ne dispose pas des droits de publication nécessaires."
+msgstr "The associated channel does not have the publishing rights."
+
+msgid "Publier"
+msgstr "Publish"
+
+msgid "Echeance"
+msgstr "Deadline"
+
+msgid "Effectué"
+msgstr "Done"
+
+msgid "Effectué par"
+msgstr "Done by"
+
+msgid "Effectué à"
+msgstr "Done at"
+
+msgid "Apparait dans le calendrier de publication"
+msgstr "Appears in the publishing calendar"
+
+msgid "Peut être supprimée"
+msgstr "Can be deleted"
+
+msgid "Publication"
+msgstr "Publication date"
+
+msgid "Groupe de tâche"
+msgstr "Task group"
+
+msgid "task"
+msgstr "task"
+
+msgid "tasks"
+msgstr "tasks"
+
+msgid "Impossible de supprimer la page d'accueil du wiki"
+msgstr "Cannot delete the Home Page of the wiki"
+
+msgid ""
+"Grâce au wiki vous pourrez répertorier des informations pour l'équipe comme "
+"la charte éditoriale, graphique ou d'autres modes d'emploi utiles."
+msgstr ""
+"Thanks to the wiki you will be able to list information for the team such as "
+"the editorial and graphic charter or other useful instructions for use."
+
+msgid "Vous pouvez éditer cette page directement ou en créer de nouvelles."
+msgstr "You can edit this page directly or create new ones."
+
+msgid ""
+"Pour avertir l'équipe de la création ou mise à jour d'une page pensez aux "
+"commentaires (juste en dessous de la page) et à la mention @tous !"
+msgstr ""
+"To notify the team of the creation or update of a page, "
+"think about the comments (just below the page) and the mention @all !"
+
+msgid "Home Page"
+msgstr "Home Page"
+
+msgid "Page de wiki"
+msgstr "Wiki page"
+
+msgid "Pages de wiki"
+msgstr "Wiki pages"
+
+msgid "Page de  wiki"
+msgstr "Wiki page"
+
+msgid "Wiki page revision"
+msgstr "Wiki page revision"
+
+msgid "Wiki page revisions"
+msgstr "Wiki page revisions"
+
+msgid "Brouillon"
+msgstr "Draft"
+
+msgid "A valider"
+msgstr "To validate"
+
+msgid "A publier"
+msgstr "To publish"
+
+msgid "En ligne"
+msgstr "Online"
+
+msgid "Hors-ligne"
+msgstr "Offline"
+
+msgid "Label"
+msgstr "Label"
+
+msgid "workflow state"
+msgstr "Workflow state"
+
+msgid "workflow states"
+msgstr "Workflow states"
+
+#~ msgid "copyright"
+#~ msgstr "copyright"
+
+#~ msgid "creative commons"
+#~ msgstr "creative commons"
+
+#~ msgid "libre"
+#~ msgstr "free"
+
+#~ msgid "print"
+#~ msgstr "print"
+
+#~ msgid "web"
+#~ msgstr "web"
+
+#~ msgid "Licence"
+#~ msgstr "Licence"
+
+#~ msgid "Durée des droits"
+#~ msgstr "Rights duration"
+
+#~ msgid "Supports autorisés"
+#~ msgstr "Allowed use"
+
+#~ msgid "Invisible"
+#~ msgstr "Hidden"
+
+#~ msgid "Créé par (externe)"
+#~ msgstr "Created by (external contact)"
+
+#~ msgid "Contact externe ayant créé le projet"
+#~ msgstr "External contact who created the project"
+
+#~ msgid "Fermé"
+#~ msgstr "Closed"
+
+#~ msgid "Parent channel"
+#~ msgstr "Parent channel"
+
+#~ msgid "Fermé le"
+#~ msgstr "Closed"
+
+#~ msgid "L'export de données que vous avez demandé est terminé"
+#~ msgstr "The data export you requested has completed"
+
+#~ msgid "Export de données terminé"
+#~ msgstr "Data export completed"
+
+#~ msgid "Télécharger l'export"
+#~ msgstr "Download the export"
+
+#~ msgid "Mon desk"
+#~ msgstr "My desk"
+
+#~ msgid "Tokens"
+#~ msgstr "Tokens"
+
+#~ msgid "Utiliser l'heure sur l'échéance de publication ?"
+#~ msgstr "Use the time on the publication deadline?"
+
+#~ msgid "Mappings"
+#~ msgstr "Mappings"
+
+#~ msgid "Historique d'édition"
+#~ msgstr "Edit history"
+
+#~ msgid "Contenus liés"
+#~ msgstr "Related content"
+
+#~ msgid "En attente"
+#~ msgstr "Pending"
+
+#~ msgid "Un mot de passe (optionnel) pour protéger la demande."
+#~ msgstr "A password (optional ) to protect the request."
+
+#~ msgid "Autoriser le destinataire à modifier le contenu"
+#~ msgstr "Allow contact to modify the content"
+
+#~ msgid "Vu le"
+#~ msgstr "Seen on"
+
+#~ msgid "Commentaire du relecteur"
+#~ msgstr "Reviewer comment"
+
+#~ msgid "Version du contenu"
+#~ msgstr "Content version"
+
+#~ msgid "Le contact a modifié la copie envoyée pour relecture"
+#~ msgstr "Copy sent for review was modified"
+
+#~ msgid "Le contenu est fusionné avec la version courante"
+#~ msgstr "Content merged with current version"
+
+#~ msgid "vers {}"
+#~ msgstr "to {}"
+
+#~ msgid "Labels"
+#~ msgstr "Labels"
+
+#~ msgid "Votre proposition de projet"
+#~ msgstr "Your project suggestion"
+
+#~ msgid "Voir/Modifier le projet proposé"
+#~ msgstr "See/edit suggested project"
+
+#~ msgid "Intitulé du projet"
+#~ msgstr "Project name"
+
+#~ msgid "Extrait de la proposition"
+#~ msgstr "Extract from the suggestion"
+
+#~ msgid "Rappel"
+#~ msgstr "Reminder"
+
+#~ msgid ""
+#~ "Ce projet est pour le moment une proposition. Il ne deviendra actif "
+#~ "qu'une fois validé"
+#~ msgstr ""
+#~ "This project is currently a 'suggestion'. It will only become active once "
+#~ "validated"
+
+#~ msgid "Proposition"
+#~ msgstr "Suggestion"
+
+#~ msgid "En cours de copie"
+#~ msgstr "Copy in progress"
+
+#~ msgid "Mot de passe optionnel pour protéger le formulaire."
+#~ msgstr "Optional password to protect the form."
+
+#~ msgid "Intitulé"
+#~ msgstr "Title"
+
+#~ msgid "Réédition autorisée"
+#~ msgstr "Authorized edit"
+
+#~ msgid "Formulaire pour projet externe"
+#~ msgstr "Form for external project"
+
+#~ msgid "Formulaires pour projet externe"
+#~ msgstr "Forms for external project"
+
+#~ msgid "Dépublier"
+#~ msgstr "To unpublish"
+
+#~ msgid "Utilise l'heure sur l'échéance"
+#~ msgstr "Use hour in deadline"
+
+#~ msgid "Tasks"
+#~ msgstr "Tasks"
+
+#~ msgid "Etats de workflow"
+#~ msgstr "Workflow state"
+
+#~ msgid "Français"
+#~ msgstr "French"
+
+#~ msgid "Anglais"
+#~ msgstr "English"
+
+#~ msgid "User not allowed to connect to this desk"
+#~ msgstr "User not allowed to connect to this desk"
+
+#~ msgid "This account is inactive"
+#~ msgstr "This account is inactive"
+
+#~ msgid "Cet item est inaccessible pour ce partage"
+#~ msgstr "This item is unreachable for this sharing"
+
+#~ msgid "Calendrier externe envoyé à"
+#~ msgstr "Custom calendar sent to"
+
+#~ msgid "le"
+#~ msgstr "on"
+
+#~ msgid "et protégée par le mot de passe :"
+#~ msgstr "and protected by password: "
+
+#~ msgid "Liste externe envoyée à"
+#~ msgstr "External list sent to"
+
+#~ msgid "Retour"
+#~ msgstr "Back"
+
+#~ msgid "Invitation - {sender_full_name} a partagé {type} avec vous"
+#~ msgstr "Invitation - {sender_full_name} shared a {type} with you"
+
+#~ msgid "un calendrier"
+#~ msgstr "a calendar"
+
+#~ msgid "une liste"
+#~ msgstr "a list"
+
+#~ msgid ""
+#~ "\n"
+#~ "Bonjour,\n"
+#~ "\n"
+#~ "%(sender_full_name)s a partagé %(type)s avec vous sur Pilot.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Hello,\n"
+#~ "\n"
+#~ "%(sender_full_name)s has shared %(type)s with you on Pilot.\n"
+
+#~ msgid "Le mot de passe est:"
+#~ msgstr "The password is:"
+
+#~ msgid "Son message"
+#~ msgstr "His/her message"
+
+#~ msgid "Comment ça marche ?"
+#~ msgstr "How it works ?"
+
+#~ msgid ""
+#~ "Etape 1, onglet 'Contenu', vous pouvez modifier et sauvegarder le "
+#~ "document envoyé"
+#~ msgstr "Step 1, tab « Content », you can edit and save the document"
+
+#~ msgid "Etape 1, onglet 'Contenu', vous pouvez consulter le document envoyé"
+#~ msgstr "Step 1, tab « Content », you can read the document"
+
+#~ msgid ""
+#~ "Etape 2, onglet 'Validation', saisissez (éventuellement) un message avant "
+#~ "de renvoyer le document"
+#~ msgstr ""
+#~ "Step 2, tab « Validation », eventually leave a message then send your "
+#~ "copy back"
+
+#~ msgid "Ouvrir le document"
+#~ msgstr "Open document"
+
+#~ msgid ""
+#~ "En cas de problème d'affichage de ce mail cliquez sur le lien ci-dessous "
+#~ "pour accéder au document"
+#~ msgstr ""
+#~ "If this email does not display correctly click the link below to open "
+#~ "document"
+
+#~ msgid "Son commentaire"
+#~ msgstr "His/Her comment"
+
+#~ msgid "Accéder au document"
+#~ msgstr "Access to document"
+
+#~ msgid "Saved Filter Notify"
+#~ msgstr "Saved Filter Notify"
+
+#~ msgid "Search Vector Update"
+#~ msgstr "Search Vector Update"
+
+#~ msgid "Edit history"
+#~ msgstr "Edit history"
+
+#~ msgid "Last Editor"
+#~ msgstr "Last Editor"
+
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgid "Item"
+#~ msgstr "Item"
+
+#~ msgid "Project"
+#~ msgstr "Project"
+
+#~ msgid "Formulaire pour contenu externe"
+#~ msgstr "Form for external content"
+
+#~ msgid "Erreur interne"
+#~ msgstr "Internal error"
+
+#~ msgid "Accueil"
+#~ msgstr "Home"
+
+#~ msgid "Public Form Form"
+#~ msgstr "Public Form Form"
+
+#~ msgid "Public Form Forms"
+#~ msgstr "Public Form Forms"
+
+#~ msgid "Peut être rendu invisible"
+#~ msgstr "Maybe be visible"
+
+#~ msgid "Gèle le contenu"
+#~ msgstr "Freeze content"
+
+#~ msgid ""
+#~ "Affiche les contenus liés aux canaux dont cette personne est responsable"
+#~ msgstr ""
+#~ "Displays the content related to the channels for which this person is "
+#~ "owner"
+
+#~ msgid "Publieurs"
+#~ msgstr "Publishers"
+
+#~ msgid ""
+#~ "Pour renouveler le token vous devez le supprimer et en créer un autre"
+#~ msgstr "To renew the token you must delete it and create another one"
+
+#~ msgid "Channel Token"
+#~ msgstr "Token du canal"
+
+#~ msgid "Channel Tokens"
+#~ msgstr "Tokens du canal"
+
+#~ msgid "Créer une clé d'accès"
+#~ msgstr "Create access token"
+
+#~ msgid "Modifier un canal"
+#~ msgstr "Edit channel"
+
+#~ msgid ""
+#~ "Une clé d'accès (token) va être créée pour ce canal. Elle doit être "
+#~ "transmise aux développeurs qui souhaitent accéder à l'API de Pilot et aux "
+#~ "contenus de ce canal"
+#~ msgstr ""
+#~ "An access key ( token ) will be created for that channel. It must be sent "
+#~ "to developers who wish to access the Pilot API and content of this channel"
+
+#~ msgid "Annuler"
+#~ msgstr "Cancel"
+
+#~ msgid "Supprimer un token de canal"
+#~ msgstr "Delete channel token"
+
+#~ msgid ""
+#~ "Ce token sera supprimé - les utilisateurs de l'API de pourront plus "
+#~ "l'utiliser:"
+#~ msgstr "This token will be deleted - API users can no longer use it :"
+
+#~ msgid "Supprimer définitivement"
+#~ msgstr "Delete permanently"
+
+#~ msgid "Token de canal"
+#~ msgstr "Channel token"
+
+#~ msgid "Token du canal"
+#~ msgstr "Channel token"
+
+#~ msgid ""
+#~ "\n"
+#~ "            Ce token est requis pour récupérer le contenu et le publier "
+#~ "sur d'autres plateformes (CMS)\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "                        This token is required to retrieve the content "
+#~ "and publish it on other platforms (CMS)\n"
+#~ "                    "
+
+#~ msgid "Retour à la liste des canaux"
+#~ msgstr "Back to channel list"
+
+#~ msgid "Supprimer"
+#~ msgstr "Delete"
+
+#~ msgid "Erreur interne sur les champs de contenu"
+#~ msgstr "Internal error on custom content type"
+
+#~ msgid "Regex non respectée : {}"
+#~ msgstr "Regex not respected: {}"
+
+#~ msgid "Types de contenus"
+#~ msgstr "Content types"
+
+#~ msgid "Version créée à partir des modifications de {0}"
+#~ msgstr "Version created with modifications from {0}"
+
+#~ msgid "Nom explicite"
+#~ msgstr "Name"
+
+#~ msgid "Créé par email externe"
+#~ msgstr "Created by external email"
+
+#~ msgid "Erreur de publication externe"
+#~ msgstr "External publication error"
+
+#~ msgid "Régionale"
+#~ msgstr "Regional"
+
+#~ msgid "Nationale"
+#~ msgstr "National"
+
+#~ msgid "Internationale"
+#~ msgstr "International"
+
+#~ msgid "Quoi et Qui"
+#~ msgstr "What and who"
+
+#~ msgid "De quoi s'agit-il ? Description détaillée de la demande"
+#~ msgstr "What is it ? Detailed description of the request"
+
+#~ msgid "Où"
+#~ msgstr "Where"
+
+#~ msgid ""
+#~ "Informations relatives au lieu concerné par la demande, le cas échéant"
+#~ msgstr "Informations on the place concerned by the request , if necessary"
+
+#~ msgid "Valorisation de la marque, .. etc"
+#~ msgstr "Branding , etc .."
+
+#~ msgid "Contacts"
+#~ msgstr "Contacts"
+
+#~ msgid "Utiles au lecteur, à faire apparaître dans le contenu final"
+#~ msgstr "Useful to the reader, to appear in the final content"
+
+#~ msgid "Sources"
+#~ msgstr "Sources"
+
+#~ msgid "Internes/externes, utiles pour la rédaction du contenu"
+#~ msgstr "Internal / external , useful for writing the content"
+
+#~ msgid "Portée"
+#~ msgstr "Scope"
+
+#~ msgid "Photos disponibles"
+#~ msgstr "Photos available"
+
+#~ msgid "Envoyer un photographe sur place ?"
+#~ msgstr "Photograph needed ?"
+
+#~ msgid "Recherches nécessaires ?"
+#~ msgstr "Documentary research needed ?"
+
+#~ msgid "Recherches documentaires nécessaires ?"
+#~ msgstr "Documentary research needed ?"
+
+#~ msgid "Soutien rédactionnel nécessaire ?"
+#~ msgstr "Copywriting help needed ?"
+
+#~ msgid "Metadata"
+#~ msgstr "Metadata"
+
+#~ msgid "Créé le"
+#~ msgstr "Created"
+
+#~ msgid "Disponible pour toute l'équipe"
+#~ msgstr "Available for the whole team"
+
+#~ msgid "Calendrier externe"
+#~ msgstr "External calendar"
+
+#~ msgid "envoyé à"
+#~ msgstr "send to"
+
+#~ msgid "et non protégé par mot de passe"
+#~ msgstr "and not protected by password"
+
+#~ msgid "et protégée par le mot de passe : "
+#~ msgstr "and protected by password: "
+
+#~ msgid "et non protégée par mot de passe"
+#~ msgstr "and not protected by password."
+
+#~ msgid "Connexion"
+#~ msgstr "Login"
+
+#~ msgid "Se souvenir de moi"
+#~ msgstr "Remember me"
+
+#~ msgid "Mot de passe oublié?"
+#~ msgstr "Forgot your password?"
+
+#~ msgid "Pas encore inscrit ?"
+#~ msgstr "Not yet registred ?"
+
+#~ msgid "Créer un compte"
+#~ msgstr "Sign up"
+
+#~ msgid ""
+#~ "Vous êtes sur une version de démonstration, la base de donnée est effacée "
+#~ "toutes les heures."
+#~ msgstr "You are on a demo version, the database is erased every hours"
+
+#~ msgid "[Pilot] Votre proposition de projet"
+#~ msgstr "[Pilot] Your project suggestion"
+
+#~ msgid "Date de publication proposée"
+#~ msgstr "Suggested publication date"
+
+#~ msgid "Auteur"
+#~ msgstr "Author"
+
+#~ msgid ""
+#~ "Ce projet est pour le moment une 'proposition'. Il ne deviendra actif "
+#~ "qu'une fois validé"
+#~ msgstr ""
+#~ "This project is currently a 'suggestion'. It will only become active once "
+#~ "validated"
+
+#~ msgid "Objectif de la communication"
+#~ msgstr "Goal"
+
+#~ msgid "Des photos sont disponibles"
+#~ msgstr "Pictures available"
+
+#~ msgid "Il faut envoyer un photographe sur place"
+#~ msgstr "Should we send a photographer?"
+
+#~ msgid "Des recherches photographiques sont nécessaires"
+#~ msgstr "Pictures research is needed"
+
+#~ msgid "Des recherches sont nécessaires"
+#~ msgstr "Research needed"
+
+#~ msgid "Un soutien rédactionnel est demandé"
+#~ msgstr "Editorial support requested"
+
+#~ msgid "Merci de ne pas y répondre."
+#~ msgstr "Please do not reply"
+
+#~ msgid "Nom de l'organisation"
+#~ msgstr "Organization name"
+
+#~ msgid "Sera utilisé pour la connexion à l'interface."
+#~ msgstr "Will be used for log in"
+
+#~ msgid "Confirmation du mot de passe"
+#~ msgstr "Password confirmation"
+
+#~ msgid "Entrez une deuxième fois le mot de passe pour vérification."
+#~ msgstr "Retype the password for verification."
+
+#~ msgid ""
+#~ "J'accepte les <a href='https://www.pilot.pm/policies/cgu/' "
+#~ "target='_blank'>Conditions Générales d'Utilisation</a>"
+#~ msgstr ""
+#~ "I accept the <a href='https://www.pilot.pm/policies/cgu/' "
+#~ "target='_blank'>Terms of Service</a>"
+
+#~ msgid "Le nom d'utilisateur {0} existe déjà. Merci d'en choisir un autre."
+#~ msgstr "Username {0} already exists. Please choose another one."
+
+#~ msgid "Cet email est déjà utilisé."
+#~ msgstr "Email already used."
+
+#~ msgid "Un des deux champs est vide, veuillez saisir un mot de passe"
+#~ msgstr "One of the two fields is empty, please enter a password"
+
+#~ msgid "Les deux mots de passe ne correspondent pas."
+#~ msgstr "The two passwords do not match."
+
+#~ msgid "Réinitialisation du mot de passe terminée"
+#~ msgstr "Password reset complete"
+
+#~ msgid ""
+#~ "Votre mot de passe a été enregistré. Vous pouvez continuer et vous "
+#~ "connecter."
+#~ msgstr "Your password has been saved. You can go ahead and log in."
+
+#~ msgid "Réinitialisation du mot de passe"
+#~ msgstr "Reset password"
+
+#~ msgid "Entrez un nouveau mot de passe"
+#~ msgstr "Enter a new password"
+
+#~ msgid ""
+#~ "Merci d'entrer deux fois votre mot de passe pour vérifier qu'il est saisi "
+#~ "correctement."
+#~ msgstr ""
+#~ "Thank you to double enter your password to verify it is entered correctly."
+
+#~ msgid "Modifier mon mot de passe"
+#~ msgstr "Change my password"
+
+#~ msgid "Échec de la réinitialisation du mot de passe"
+#~ msgstr "Failed to reset password"
+
+#~ msgid ""
+#~ "Le lien de réinitialisation était invalide, peut être parce qu'il a déjà "
+#~ "été utilisé. veuillez demander à nouveau une réinitialisation du mot de "
+#~ "passe."
+#~ msgstr ""
+#~ "The reset link was invalid, maybe because it was already used. please "
+#~ "request a password reset again."
+
+#~ msgid "Instructions envoyées"
+#~ msgstr "Instructions sent"
+
+#~ msgid ""
+#~ "Si l'adresse indiquée correspond à un utilisateur, nous avons envoyé un "
+#~ "email contenant les informations de réinitialisation du mot de passe."
+#~ msgstr ""
+#~ "If the specified address matches a user, we sent an email containing the "
+#~ "password reset information."
+
+#~ msgid ""
+#~ "Vous devriez le recevoir rapidement. Dans le cas contraire, l'adresse "
+#~ "entrée était peut-être incorrecte."
+#~ msgstr ""
+#~ "You should receive it quickly. Otherwise, the entered address may have "
+#~ "been incorrect."
+
+#~ msgid ""
+#~ "Mot de passe oublié? Saisissez votre email, nous vous enverrons les "
+#~ "instructions pour le réinitialiser."
+#~ msgstr ""
+#~ "Forgot your password? Enter your email, we will send you instructions to "
+#~ "reset it."
+
+#~ msgid "Réinitialiser mon mot de passe"
+#~ msgstr "Reset my password"
+
+#~ msgid "Inscription"
+#~ msgstr "Registration"
+
+#~ msgid "Enregistrement terminé!"
+#~ msgstr "Registration complete"
+
+#~ msgid ""
+#~ "Vous allez recevoir un email de notification à l'adresse email que vous "
+#~ "avez renseignée. Veuillez cliquer sur le lien inclus dans l'email afin "
+#~ "que nous puissions vérifiez votre adresse email."
+#~ msgstr ""
+#~ "You will receive an email notification to the email address you "
+#~ "provided . Please click on the link in the email so that we can verify "
+#~ "your email address."
+
+#~ msgid "Confirmez votre email et créez votre compte"
+#~ msgstr "Confirm your email and create your account"
+
+#~ msgid "Lien invalide"
+#~ msgstr "Invalid link"
+
+#~ msgid "Ce lien d'invitation n'est pas correct."
+#~ msgstr "This activation link is incorrect"
+
+#~ msgid "Ce lien d'invitation n'est plus valable car il a déjà été utilisé."
+#~ msgstr "This invitation link is invalid because it has already been used"
+
+#~ msgid "!! Attention !!"
+#~ msgstr "!! Warning !!"
+
+#~ msgid "Oui je veux utiliser un autre compte"
+#~ msgstr "Yes I want to use another account"
+
+#~ msgid "Confirmez votre invitation"
+#~ msgstr "Confirm your invitation"
+
+#~ msgid ""
+#~ "\n"
+#~ "                            <p>Vous avez été invité par <b>%(name)s</b></"
+#~ "p>\n"
+#~ "                            <p>Vous rejoignez le desk <b>%(desk_name)s</"
+#~ "b></p>\n"
+#~ "                            <p>Votre E-mail est <b>%(email)s</b></p>\n"
+#~ "                        "
+#~ msgstr ""
+#~ "\n"
+#~ "                            <p>You've been invited by <b>%(name)s</b>.</"
+#~ "p>\n"
+#~ "                            <p>You join the desk <b>%(desk_name)s</b></"
+#~ "p>\n"
+#~ "                            <p>Your E-mail is <b>%(email)s</b></p>\n"
+#~ "                        "
+
+#~ msgid ""
+#~ "\n"
+#~ "                            <p>Vous avez déjà un compte sur Pilot : <br/"
+#~ "><b>%(username)s</b>.</p>\n"
+#~ "                            <p>Ce compte sera associé au desk "
+#~ "%(desk_name)s</p>\n"
+#~ "                            "
+#~ msgstr ""
+#~ "\n"
+#~ "                            <p>You already have a Pilot account : <br/><b>"
+#~ "%(username)s</b>.</p>\n"
+#~ "                            <p>This account will be associated to the "
+#~ "desk %(desk_name)s</p>\n"
+#~ "                            "
+
+#~ msgid "Created"
+#~ msgstr "Créé"
+
+#~ msgid "Canaux autorisés"
+#~ msgstr "Authorized channels"
+
+#~ msgid ""
+#~ "Contenu trop long. Twitter autorise seulement %(limit_value)d signes "
+#~ "( %(show_value)d signes saisis)"
+#~ msgstr ""
+#~ "Content too long. Twitter only allows %(limit_value)d  characters "
+#~ "( %(show_value)d signs)"
+
+#~ msgid "Tweet invalide"
+#~ msgstr "Invalid tweet"
+
+#~ msgid "Texte vide"
+#~ msgstr "Empty text"
+
+#~ msgid "Caractères invalides"
+#~ msgstr "Invalid characters"
+
+#~ msgid "Tâches"
+#~ msgstr "Tasks"
+
+#~ msgid "Date associable"
+#~ msgstr "Date associated"
+
+#~ msgid "Heure associable"
+#~ msgstr "Hour associated"
+
+#~ msgid "Etats configurable"
+#~ msgstr "Custom states"

@@ -1,0 +1,4 @@
+{% load i18n %}
+{{ object_type | capfirst }} #{{ linked_object.id }} {{ linked_object }}
+{% if linked_object.project %}{% trans "Projet" %} {{ linked_object.project }}{% endif %}
+{% if task.deadline %}{% trans "Tâche à faire pour le" %} {{ task.deadline|date:"SHORT_DATE_FORMAT" }}{% endif %}

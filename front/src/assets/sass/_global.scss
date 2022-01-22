@@ -1,0 +1,99 @@
+@import "~@sass/include_media.scss";
+
+html,
+body {
+    @apply h-full flex flex-col text-gray-900 antialiased bg-gray-50 overflow-hidden;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+}
+
+#app {
+    @apply flex flex-shrink overflow-y-hidden;
+}
+
+main {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+    @apply flex flex-col flex-grow overflow-y-hidden;
+}
+
+#app-body {
+    @apply h-screen overflow-y-scroll;
+
+    &.no-scroll {
+        @apply overflow-y-hidden;
+    }
+}
+
+ol,
+ul {
+    @apply list-disc list-inside;
+}
+
+a {
+    @apply text-blue-700 cursor-pointer transition duration-150 ease-in-out;
+
+    &:hover {
+        @apply text-blue-600;
+    }
+}
+
+a,
+button {
+    &.indigo-link {
+        @apply text-indigo-600 transition duration-150 ease-in-out;
+
+        &:hover {
+            @apply text-indigo-500;
+        }
+    }
+
+    &.red-link {
+        @apply text-red-600 transition duration-150 ease-in-out;
+
+        &:hover {
+            @apply text-red-500;
+        }
+    }
+}
+
+.actionlink {
+    @apply text-blue-800 underline;
+    &:hover {
+        @apply text-blue-700 underline;
+    }
+
+    &:active {
+        @apply text-blue-800;
+    }
+    &.is-red {
+        @apply text-red-800;
+        &:hover {
+            @apply text-red-700;
+        }
+
+        &:active {
+            @apply text-red-800;
+        }
+    }
+
+    &.is-gray {
+        @apply text-gray-700;
+        &:hover {
+            @apply text-gray-500;
+        }
+
+        &:active {
+            @apply text-gray-800;
+        }
+    }
+}
+
+textarea,
+select,
+input,
+button,
+button:focus {
+    outline: transparent none;
+}

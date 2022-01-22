@@ -1,0 +1,25 @@
+@import "~animate.css";
+
+/*
+Override animate.css default animation time
+ */
+.animated {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+.animated-100 {
+    animation-duration: 0.1s;
+}
+
+.animated-150 {
+    animation-duration: 0.15s;
+}
+
+.animated-200 {
+    animation-duration: 0.2s;
+}
+
+.animated-500 {
+    animation-duration: 0.5s;
+}

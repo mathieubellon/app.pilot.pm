@@ -1,0 +1,58 @@
+{% load static %}
+
+{% comment %}
+    COOKIE HTTPONLY is activated. Csrf token is not accessible in cookie, so it is made available
+    in template.
+{% endcomment %}
+{% csrf_token %}
+
+<script>
+window.pilot = window.pilot || {};
+window.pilot.desk = window.pilot.desk || {};
+window.pilot.user = window.pilot.user || {};
+window.pilot.currentLocale = "{{ LANGUAGE_CODE }}";
+window.pilot.djangoSettings = {
+    AWS_S3_BASE_URL: "{{ pilot_context.settings.AWS_S3_BASE_URL }}",
+    SENTRY_FRONTEND_DSN: "{{ pilot_context.settings.SENTRY_FRONTEND_DSN }}",
+    STRIPE_PUBLIC_KEY: "{{ pilot_context.settings.STRIPE_PUBLIC_KEY }}",
+};
+window.pilot.contentTypes = {{ pilot_context.content_types|safe }};
+window.pilot.sentryEnabled = {{ pilot_context.sentry_frontend_enabled | yesno:"true,false" }};
+window.pilot.sentryRelease = '{{ pilot_context.sentry_release }}';
+window.pilot.activeMenu = '{{ pilot_context.active_menu }}';
+window.pilot.isImpersonate = {{ request.user.is_impersonate | yesno:"true,false" }};
+window.pilot.onDemoSite = {{ pilot_context.on_demo_site | yesno:"true,false" }};
+window.pilot.bundleName = '{{ pilot_context.bundle_name }}';
+
+{%  if request.desk %}
+    window.pilot.desk = {
+        id: {{ request.desk.id }},
+        name: '{{ request.desk.name }}',
+        creationFormsFieldsVisiblesByDefault: {{ request.desk.creation_forms_fields_visibles_by_default | yesno:"true,false" }},
+        privateItemsEnabled: {{ request.desk.private_items_enabled | yesno:"true,false" }},
+        itemLanguagesEnabled: {{ request.desk.item_languages_enabled | yesno:"true,false" }},
+        usageLimits: {{ pilot_context.usage_limits | safe }},
+        {% if request.desk.logo %}
+        logoUrl: '{{ request.desk.get_logo_url }}',
+        {% endif %}
+        hasItems: {{ request.desk.items.exists | yesno:"true,false" }},
+        hasProjects: {{ request.desk.projects.exists | yesno:"true,false" }},
+    };
+    window.pilot.user = {
+        id: {{ request.user.id }},
+        username: "{{ request.user.username }}",
+        email: "{{ request.user.email }}",
+        avatar: "{{ request.user.get_avatar_url }}",
+        permission: "{{ request.user.permissions.permission }}",
+        firstLogin: {{ pilot_context.first_login | yesno:"true,false" }},
+    };
+
+    window.pilot.UILanguages = {{ pilot_context.ui_languages | safe }};
+    window.pilot.timezones = {{ pilot_context.timezones | safe }};
+    window.pilot.loginMenus = {{ pilot_context.login_menus | safe }};
+{% endif %}
+
+window.pilot.user.isAnonymous = {{ request.user.is_anonymous | yesno:"true,false" }};
+
+
+</script>

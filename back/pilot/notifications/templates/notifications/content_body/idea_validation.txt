@@ -1,0 +1,6 @@
+{% load i18n %}
+{% blocktrans %}
+Bonjour,
+
+Votre proposition de {{ object_type }} "{{ object_name }}" a été {{ verdict }}.
+{% endblocktrans %}

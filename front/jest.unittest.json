@@ -1,0 +1,20 @@
+{
+    "setupTestFrameworkScriptFile": "<rootDir>/tests/jest.unittest.init.js",
+    "moduleFileExtensions": ["js", "css", "scss", "json", "vue"],
+    "moduleDirectories": ["node_modules", "pilot"],
+    "moduleNameMapper": {
+        "\\.(css|scss)$": "identity-obj-proxy",
+        "\\.(woff|ttf|eot|png|gif|json)$": "<rootDir>/front/tests/__mocks__//fileMock.js",
+        "\\.svg$": "<rootDir>/front/tests/__mocks__/svgMock.js",
+        "^@sass": "<rootDir>/front/tests/__mocks__/styleMock.js",
+        "^@js(.*)$": "<rootDir>/front/src/js$1",
+        "^@components(.*)$": "<rootDir>/front/src/components$1",
+        "^@svg(.*)$": "<rootDir>/front/src/assets/svg$1"
+    },
+    "testPathIgnorePatterns": ["/node_modules/", "/fixtures/"],
+    "transform": {
+        ".*\\.vue$": "<rootDir>/tests/jest-vue.js",
+        ".*": "babel-jest"
+    },
+    "testRegex": "/__unittests__/.*\\.js$"
+}

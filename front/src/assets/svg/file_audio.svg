@@ -1,0 +1,25 @@
+<svg width="44" height="61" viewBox="0 0 44 61" xmlns="http://www.w3.org/2000/svg">
+    <g class="nc-icon-wrapper">
+        <title>67 -Music File- (Webby)</title>
+        <g transform="translate(1 1)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path d="M42 12.014H32a2 2 0 0 1-2-2v-10l12 12z" fill="#D0E8F9"></path>
+            <path d="M42 12.014H32a2 2 0 0 1-2-2v-10l12 12z" stroke="#0096E6" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+            <path d="M42 12.014H32a2 2 0 0 1-2-2v-10H2a2 2 0 0 0-2 2v54a2 2 0 0 0 2 2h38a2 2 0 0 0 2-2v-44z"
+                  fill="#FFF"></path>
+            <path d="M42 12.014H32a2 2 0 0 1-2-2v-10H2a2 2 0 0 0-2 2v54a2 2 0 0 0 2 2h38a2 2 0 0 0 2-2v-44z"
+                  stroke="#0096E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M17 41.014a4 4 0 0 1 0-8h4v4a4 4 0 0 1-4 4" fill="#D0E8F9"></path>
+            <path d="M17 41.014a4 4 0 0 1 0-8h4v4a4 4 0 0 1-4 4z" stroke="#0096E6" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M26.032 28.014l.617-1.946a7.457 7.457 0 0 0-1.463-7.27l-4.154-4.784-.032 19" stroke="#0196E7"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M26 48.014h10" stroke="#0196E7" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+            <path d="M26 52.014h5" stroke="#0196E7" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+            <path d="M36 52.014h-1" stroke="#0196E7" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

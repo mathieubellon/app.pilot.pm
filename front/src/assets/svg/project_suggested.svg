@@ -1,0 +1,48 @@
+<svg
+    height="24"
+    width="24"
+    version="1.1"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svgjs="http://svgjs.com/svgjs"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+    <g transform="matrix(1,0,0,1,0,0)">
+        <path
+            d="M 8.25,18.75H2.447 "
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+        ></path>
+        <path
+            d="M 20.25,8.25v-3c0-0.828-0.672-1.5-1.5-1.5H8.25v-1.5c0-0.828-0.672-1.5-1.5-1.5h-4.5 c-0.828,0-1.5,0.672-1.5,1.5v14.8c0.013,0.939,0.785,1.689,1.723,1.676c0.752-0.01,1.408-0.514,1.613-1.238l2.351-8.154 C6.622,8.692,7.21,8.25,7.879,8.25H21.75c0.828,0,1.5,0.671,1.501,1.499c0,0.13-0.017,0.26-0.051,0.387 "
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+        ></path>
+        <path
+            d="M 11.323,16.3 c-0.523,3.272,1.705,6.349,4.977,6.872c3.272,0.523,6.349-1.705,6.872-4.977c0.523-3.272-1.705-6.349-4.977-6.872 c-0.628-0.1-1.268-0.1-1.895,0C13.741,11.734,11.734,13.741,11.323,16.3z "
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+        ></path>
+        <path
+            d="M 15.375,16.125c0-1.036,0.839-1.875,1.875-1.875 s1.875,0.839,1.875,1.875S18.286,18,17.25,18 "
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+        ></path>
+        <path
+            d="M 17.25,20.25c0.207,0,0.375,0.168,0.375,0.375S17.457,21,17.25,21 s-0.375-0.168-0.375-0.375S17.043,20.25,17.25,20.25"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+        ></path>
+    </g>
+</svg>

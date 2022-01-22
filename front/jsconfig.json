@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@": ["./src/*"],
+            "pilot": ["./src/*"],
+            "@js": ["./src/js/*"],
+            "@components": ["./src/components/*"],
+            "@views": ["./src/views/*"],
+            "@richText": ["./src/richText/*"],
+            "@sass": ["./src/assets/sass/*"],
+            "@svg": ["./src/assets/svg/*"]
+        }
+    },
+    "include": ["./src/**/*"]
+}

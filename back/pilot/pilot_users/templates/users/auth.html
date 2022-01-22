@@ -1,0 +1,19 @@
+{% extends "layout/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ block.super }}{% endblock %}
+
+{% block app %}
+    <div id="vue-user-auth"></div>
+{% endblock app %}
+
+{% block extrajs %}
+<script>
+    // rendering context, coming from server-side
+    window.authContext = {
+        uidb64: '{{ uidb64 }}',
+        token: '{{ token }}',
+        invalidToken: {{ invalid_token | yesno:"true,false" }},
+    }
+</script>
+{% endblock %}

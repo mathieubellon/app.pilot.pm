@@ -1,0 +1,55 @@
+.NotificationSettingsLine {
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: bold;
+    align-items: center;
+    padding: 1em 0.8em;
+    margin: 0 -0.7em;
+    border-radius: 5px;
+
+    .alert-panel {
+        width: 100%;
+        text-align: center;
+    }
+
+    &.blink {
+        animation: blinker 1s linear infinite;
+    }
+}
+
+.NotificationSettingsLine:hover {
+    background-color: $gray-lighter;
+}
+.NotificationSettingsLine__Name {
+    font-size: 0.9em;
+    font-weight: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.NotificationSettingsLine__helptext {
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+
+.NotificationSettingsLine__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+
+.NotificationSettingsLine__toggle {
+    font-size: 0.7em;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2em;
+
+    &.noDelete {
+        margin-right: 3.5em;
+    }
+}

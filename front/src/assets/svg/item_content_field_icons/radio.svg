@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="85px" viewBox="0 0 80 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="radio" transform="translate(34.000000, 14.000000)">
+            <path d="M6.5,0 C10.0908889,0 13,2.90911111 13,6.5 C13,10.0908889 10.0908889,13 6.5,13 C2.90911111,13 0,10.0908889 0,6.5 C0,2.90911111 2.90911111,0 6.5,0 Z" id="Path" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M6.5,19 C10.0908889,19 13,21.9091111 13,25.5 C13,29.0908889 10.0908889,32 6.5,32 C2.90911111,32 0,29.0908889 0,25.5 C0,21.9091111 2.90911111,19 6.5,19 Z" id="Path" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M6.5,38 C10.0908889,38 13,40.9091111 13,44.5 C13,48.0908889 10.0908889,51 6.5,51 C2.90911111,51 0,48.0908889 0,44.5 C0,40.9091111 2.90911111,38 6.5,38 Z" id="Path" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Oval" fill="#000000" cx="6.5" cy="6.5" r="3.5"></circle>
+        </g>
+    </g>
+</svg>

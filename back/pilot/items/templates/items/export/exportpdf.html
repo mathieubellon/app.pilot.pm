@@ -1,0 +1,62 @@
+{% load i18n %}
+<!DOCTYPE document SYSTEM "rml.dtd">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ item_content.title }}</title>
+        <style type="text/css">
+            @page {
+                size: {{ pagesize }};
+                margin: 2cm;
+                /*padding 2cm;*/
+                border: 0pt solid white;
+                @frame footer {
+                    -pdf-frame-content: footerContent;
+                    bottom: 0cm;
+                    margin-left: 9cm;
+                    margin-right: 9cm;
+                    height: 1cm;
+
+
+                }
+            }
+            #main_content{
+                font-size: 16px;
+            }
+
+            table {
+                width: 100%;
+                table-layout: fixed;
+                border-collapse: collapse;
+            }
+
+            td, th {
+                border: solid 2px #d2d6dc;
+                padding: 4px 4px 0 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">
+            {% autoescape off %}
+            {{ item.title }}
+            {% endautoescape %}
+        </h1>
+        <div id="main_content">
+                {% for name, converter in item_content.converters.items %}
+                    <p>
+                        <strong>{{ converter.label }}</strong>
+                        <br />
+                        {{ converter.as_html }}
+                    </p>
+                {% endfor %}
+        </div>
+        <div id="footerContent">
+            {%block page_foot%}
+                Page <pdf:pagenumber>
+            {%endblock%}
+        </div>
+    </body>
+</html>
+
+

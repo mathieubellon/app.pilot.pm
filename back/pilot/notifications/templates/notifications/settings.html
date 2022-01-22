@@ -1,0 +1,22 @@
+{% extends "layout/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ block.super }} - {% trans "Notifications" %}{% endblock %}
+
+
+{% block app %}
+    <div id="vue-notifications-settings"></div>
+{% endblock app %}
+
+{% block extrajs %}
+<script>
+    // rendering context, coming from server-side
+    window.notificationsSettingsContext = {
+        token: "{{ token }}",
+        user: {
+            username: "{{ notification_user.username }}",
+            notification_preferences: {{ notification_preferences|safe }}
+        }
+    }
+</script>
+{% endblock extrajs %}

@@ -1,0 +1,17 @@
+.help-text {
+    @apply w-full flex flex-col mx-auto max-w-lg mt-8;
+}
+
+.help-text-title {
+    @apply flex text-gray-800 font-bold mb-4;
+}
+
+.help-text-icon {
+    @apply text-blue-600 mr-3;
+    width: 24px;
+    height: 24px;
+}
+
+.help-text-content {
+    @apply text-gray-700 mb-6;
+}

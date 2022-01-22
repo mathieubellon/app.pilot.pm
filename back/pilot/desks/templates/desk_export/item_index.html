@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item #{{ item.id }}</title>
+</head>
+<body>
+<h1>Item #{{ item.id }} {{ item.title }}</h1>
+
+Content : <a href="../../{{ html_content_path }}" target="_blank">{{ html_content_path }}</a><br/>
+Content (docx) : <a href="../../{{ docx_content_path }}" target="_blank">{{ docx_content_path }}</a><br/>
+Metadata : <a href="../../{{ metadata_path }}" target="_blank">{{ metadata_path }}</a><br/>
+Comments : <a href="../../{{ comments_path }}" target="_blank">{{ comments_path }}</a><br/>
+
+<h2>Linked Assets</h2>
+{%  for asset_index in linked_assets_indicies %}
+    <a href="../../{{ asset_index.path }}">{{ asset_index.name }}</a><br />
+{%  endfor %}
+</body>
+</html>

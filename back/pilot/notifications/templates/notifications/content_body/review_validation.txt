@@ -1,0 +1,3 @@
+{% load i18n %}
+{% if comment %}{% trans "Son commentaire:"%}
+{{ comment }}{% endif %}

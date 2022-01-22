@@ -1,0 +1,6 @@
+[run]
+omit =
+    pilot/wsgi.py
+    pilot/settings/*
+    */migrations/*
+    manage.py

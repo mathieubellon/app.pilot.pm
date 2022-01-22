@@ -1,0 +1,10 @@
+{% load i18n %}{% autoescape off %}
+
+{{ intro }}, {{ reason }}.
+
+{% trans "Voici le détail de son message d'absence :" %}
+{% if subject %}
+{{ subject }}
+----------{% endif %}
+{{ bounce_details }}
+{% endautoescape %}

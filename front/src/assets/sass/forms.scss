@@ -1,0 +1,189 @@
+@import "~@sass/colors.scss";
+@import "~@sass/include_media.scss";
+@import "~@sass/common_variables.scss";
+
+/***********************
+* General form styles
+************************/
+
+%invalid-input {
+    @apply border-transparent bg-red-100;
+}
+%warning-input {
+    @apply border-transparent bg-yellow-100;
+}
+%white-input {
+    @apply bg-white;
+
+    &::placeholder {
+        color: unset;
+    }
+}
+
+input[type="text"],
+input[type="search"],
+input[type="number"],
+input[type="file"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea,
+.InputStyling {
+    @apply flex items-center;
+
+    background-color: $field-background-color;
+    color: $field-color;
+    border: $field-border;
+    border-radius: $field-border-radius;
+    caret-color: $field-caret-color;
+
+    font-size: $field-font-size;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    min-height: $field-min-height;
+    letter-spacing: normal;
+    line-height: $field-line-height;
+    margin: 0px;
+    outline: currentcolor none medium;
+    padding: 7px 12px;
+    transition: all 0.1s ease 0s;
+    width: 100%;
+
+    &.is-invalid {
+        @extend %invalid-input;
+    }
+
+    &.is-white {
+        @extend %white-input;
+    }
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.v-select.is-white {
+    .vs__dropdown-toggle,
+    .vs__selected,
+    .vs__deselect,
+    .vs__search,
+    .vs__search:focus {
+        @extend %white-input;
+    }
+}
+
+.v-select.is-invalid {
+    .vs__dropdown-toggle,
+    .vs__selected,
+    .vs__deselect,
+    .vs__search,
+    .vs__search:focus {
+        @extend %invalid-input;
+    }
+}
+
+.form__field {
+    @apply mb-4;
+}
+
+.form__field__label {
+    @apply flex items-center justify-between text-black text-sm font-bold w-full border border-transparent;
+}
+
+.form__field__label__minitag {
+    @apply text-xs font-normal text-gray-400 leading-none px-0.5;
+}
+
+.form__field__error {
+    @apply text-red-600;
+}
+
+.form__field__warning {
+    @apply text-yellow-500;
+}
+
+.form__field__help {
+    @apply leading-tight text-xs text-gray-500 font-medium;
+}
+
+/***********************
+* ItemContent specific form styles
+************************/
+
+/**
+WARNING : For correct annotations positioning,
+the max-width for .ContentFormContainer .ItemContentForm and .ItemContentReadOnly
+MUST ALL BE THE SAME
+**/
+.ItemContentForm,
+.ItemContentReadOnly {
+    @apply flex flex-col justify-center max-w-3xl mx-auto pt-4;
+}
+
+.ItemContentFormFieldElement.is-invalid {
+    input,
+    textarea,
+    .MultiCheckBoxInput,
+    .ItemContentRichEditor,
+    .RadioInput,
+    .vs__dropdown-toggle,
+    .vs__selected,
+    .vs__deselect,
+    .vs__search,
+    .vs__search:focus,
+    .AssetWidget {
+        @extend %invalid-input;
+    }
+}
+.ItemContentFormFieldElement.is-warning {
+    input,
+    textarea,
+    .MultiCheckBoxInput,
+    .ItemContentRichEditor,
+    .RadioInput,
+    .vs__dropdown-toggle,
+    .vs__selected,
+    .vs__deselect,
+    .vs__search,
+    .vs__search:focus,
+    .AssetWidget {
+        @extend %warning-input;
+    }
+}
+
+.ItemContentFormField {
+    @apply my-4;
+    @include media("<phone") {
+        @apply my-6;
+    }
+}
+
+.ItemContentHelpText {
+    margin: 0;
+    font-size: 0.7em;
+    color: #a6a6a6;
+    font-weight: bolder;
+    ul {
+        padding-left: 1.2em;
+    }
+}
+
+.ItemContentFormField__deleteElasticElement {
+    @apply text-red-700 font-bold underline;
+}
+.ItemContentFormField__addElasticElement {
+    @apply w-full mb-10;
+}
+
+/***********************
+* Name edition style
+************************/
+
+.nameEditionInput {
+    @apply w-full border-2 border-blue-800 bg-blue-50 rounded leading-snug;
+
+    &.is-invalid {
+        @apply border-red-600 bg-red-50;
+    }
+}

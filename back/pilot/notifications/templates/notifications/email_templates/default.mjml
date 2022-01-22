@@ -1,0 +1,64 @@
+<mjml>
+  <mj-raw>{% load i18n %}</mj-raw>
+  <mj-body background-color="#f5f8fa">
+    <mj-section padding-bottom="0px" background-color="#f5f8fa">
+      <mj-column width="100%">
+        <mj-text font-size="24px" color="black" align="left" color="#007bb6" font-weight="900"> Pilot </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>{% if content_title %}</mj-raw>
+    <mj-section padding-bottom="20px" background-color="#fff">
+      <mj-column width="100%">
+        <mj-text font-size="16px" color="black" font-weight="600">
+          {{ content_title|linebreaksbr }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>{% endif %}</mj-raw>
+    <mj-raw>{% if quote %}</mj-raw>
+    <mj-section background-color="#ffffff">
+      <mj-column width="96%" background-color="#E9E9E9" border-radius="3px">
+        <mj-text padding="20px" align="left" color="#007bb6" font-weight="600">
+          {{ quote|safe }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>{% endif %}</mj-raw>
+    <mj-raw>{% if content_body %}</mj-raw>
+    <mj-section background-color="#ffffff">
+      <mj-column width="100%">
+        <mj-text align="left" font-size="14px" color="black">
+          {{ content_body|linebreaksbr }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>{% endif %}</mj-raw>
+    <mj-raw>{% if button_action_url %}</mj-raw>
+    <mj-section background-color="#ffffff">
+      <mj-column>
+        <mj-button inner-padding="20px" href="{{ button_action_url }}" font-size="16px" background-color="#167ffc" color="white">
+          {{ button_action_text }}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding-bottom="50px" background-color="#ffffff">
+      <mj-column>
+        <mj-text padding="0px" align="center" font-size="12px" color="grey"> {% trans 'En cas de problème vous pouvez aussi cliquer sur ce lien' %} </mj-text>
+        <mj-text align="center" font-size="12px">
+          <a href="{{ button_action_url }}">{{ button_action_url }}</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>{% endif %}</mj-raw>
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="15px" align="center" color="#90a4ae" padding="0px"> {% trans "Ce message est une notification automatique envoyée par l'application Pilot." %} </mj-text>
+        <mj-raw>{% if notifications_settings_url %}</mj-raw>
+        <mj-text font-size="15px" align="center" padding="0px">
+          <a href="{{ notifications_settings_url }}">{% trans "Cliquez ici pour gérer vos alertes" %}</a>
+        </mj-text>
+        <mj-raw>{% endif %}</mj-raw>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

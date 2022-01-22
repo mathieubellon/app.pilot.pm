@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ instance }}</title>
+</head>
+<body>
+    <h1>{{ instance }}</h1>
+
+    {% for metadata in metadata_list %}
+        <p>
+            <strong>{{ metadata.label }}</strong>
+            <br />
+            {{ metadata.value }}
+        </p>
+    {% endfor %}
+</body>
+</html>

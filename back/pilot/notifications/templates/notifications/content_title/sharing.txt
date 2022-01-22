@@ -1,0 +1,2 @@
+{% load i18n %}
+{{ sender_full_name }} {% trans "a partagé du contenu avec vous" %} : {{ sharing.get_target }}

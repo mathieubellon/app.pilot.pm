@@ -1,0 +1,25 @@
+@import "~@sass/colors";
+@import "~@sass/include_media.scss";
+
+/* ==========================================================================
+  Decoration Boxes
+  ========================================================================== */
+
+$widthDecorationBox: 300px;
+// Spacing between the content and the decoration box
+$itemDecorationBoxGutter: 15px;
+
+@mixin itemDecorationBoxes() {
+    position: absolute;
+    top: 0;
+    width: $widthDecorationBox;
+}
+
+@mixin ItemListHeaderHeight {
+    height: 38px;
+    max-height: 38px;
+
+    @include media("<=tablet") {
+        display: none;
+    }
+}

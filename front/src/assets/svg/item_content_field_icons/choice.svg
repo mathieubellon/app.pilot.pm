@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="85px" viewBox="0 0 80 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="choices" transform="translate(8.000000, 34.000000)" stroke="#000000" stroke-width="1.5">
+            <path d="M4.26666667,0 L59.7333333,0 C62.0885333,0 64,1.4336 64,3.2 L64,12.8 C64,14.5664 62.0885333,16 59.7333333,16 L4.26666667,16 C1.91146667,16 0,14.5664 0,12.8 L0,3.2 C0,1.4336 1.91146667,0 4.26666667,0 Z" id="Path"></path>
+            <polygon id="Path" fill="#000000" stroke-linejoin="round" points="59 6 53 6 56 10"></polygon>
+        </g>
+    </g>
+</svg>

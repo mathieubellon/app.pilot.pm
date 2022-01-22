@@ -1,0 +1,36 @@
+.Picker__List {
+    @apply mt-10 flex flex-col w-full;
+}
+
+@mixin PickerElement {
+    @apply h-14 w-full flex flex-grow items-center content-center bg-gray-100 rounded p-3 mb-1;
+}
+
+.Picker__Loader {
+    @include PickerElement;
+}
+
+.Picker__Element {
+    @include PickerElement;
+
+    input {
+        @apply mr-4;
+    }
+}
+
+.Picker__Element__Name {
+    @apply flex items-center;
+}
+
+.Picker__Element:not(.disabled):hover {
+    @apply bg-gray-200 cursor-pointer;
+}
+
+.Picker__Element.picked {
+    @apply bg-blue-200 border border-blue-400;
+}
+
+.Picker__Element.disabled {
+    @apply text-gray-600;
+    cursor: not-allowed;
+}

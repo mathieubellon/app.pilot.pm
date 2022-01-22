@@ -1,0 +1,54 @@
+@import "colors";
+
+.simple-panel {
+    @apply bg-white rounded border border-gray-300 p-4 m-4;
+}
+
+.hero-container {
+    @apply w-full h-screen flex justify-center items-start pt-20;
+}
+
+.hero-panel {
+    @extend .simple-panel;
+    @apply relative;
+    color: $gray-dark;
+    width: 500px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    h1,
+    p {
+        @apply mb-4;
+    }
+
+    h1 {
+        @apply font-bold text-2xl;
+    }
+
+    hr {
+        color: $gray;
+        background-color: $gray;
+        margin: 20px 0;
+    }
+}
+
+/*Alerts*/
+
+.alert-panel {
+    @apply p-4 my-2 shadow;
+}
+
+.alert-panel.is-green {
+    @apply text-green-700 bg-green-50;
+}
+
+.alert-panel.is-blue {
+    @apply text-blue-700 bg-blue-50;
+}
+
+.alert-panel.is-yellow {
+    @apply text-yellow-700 bg-yellow-50;
+}
+
+.alert-panel.is-red {
+    @apply text-red-700 bg-red-50;
+}

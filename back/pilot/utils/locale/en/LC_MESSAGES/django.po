@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Pilot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-25 10:42+0100\n"
+"PO-Revision-Date: 2018-06-01 09:18+0200\n"
+"Last-Translator: matthieu bellon <matthieu@huckleberry.fr>\n"
+"Language-Team: Pilot tch <tech@pilot.pm>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+
+msgid "Contenu"
+msgstr "content"
+
+msgid "Erreur interne"
+msgstr "Internal error"
+
+msgid "An error has occured"
+msgstr "An error has occured"
+
+msgid "Oui"
+msgstr "Yes"
+
+msgid "Non"
+msgstr "No"
+
+msgid "Champ créé"
+msgstr "Field created"
+
+msgid "Champ supprimé"
+msgstr "Field deleted"
+
+msgid ""
+"Le type du champ a changé entre les deux versions. Impossible de montrer les "
+"différences."
+msgstr ""
+"The field type has been modified between the two versions. Cannot show a "
+"diff."
+
+msgid "Erreur interne lors du diff"
+msgstr "Internal error during the diff"
+
+msgid "Télécharger l'export"
+msgstr "Download the export"
+
+msgid "Export terminé"
+msgstr "Export completed"
+
+#, python-brace-format
+msgid ""
+"L'export que vous avez demandé est terminé. <a href='{export_url}'>Cliquez "
+"ici pour le télécharger</a>"
+msgstr ""
+"The export you requested has completed. <a href='{export_url}'>Click here to "
+"download it</a>"
+
+#, python-format
+msgid ""
+"'%(value)s' value is an aware-datetime, butNaiveDateTimeField accepts only "
+"naive-datetimes"
+msgstr ""
+"'%(value)s' value is an aware-datetime, butNaiveDateTimeField accepts only "
+"naive-datetimes"
+
+msgid "Date (with naive time)"
+msgstr "Date (with naive time)"
+
+msgid "Mis à jour par"
+msgstr "Updated by"
+
+msgid "Mis à jour à"
+msgstr "Updated on"
+
+msgid "Créé le"
+msgstr "Created on"
+
+msgid "Créé par"
+msgstr "Created by"
+
+msgid "Invisible"
+msgstr ""
+
+msgid "Arabe"
+msgstr ""
+
+msgid "Bulgare"
+msgstr ""
+
+msgid "Tchèque"
+msgstr ""
+
+msgid "Danois"
+msgstr ""
+
+msgid "Allemand"
+msgstr ""
+
+msgid "Grec"
+msgstr ""
+
+msgid "Anglais"
+msgstr ""
+
+msgid "Espagnol"
+msgstr ""
+
+msgid "Estonien"
+msgstr ""
+
+msgid "Finnois"
+msgstr ""
+
+msgid "Français"
+msgstr ""
+
+msgid "Japonais"
+msgstr ""
+
+msgid "Hongrois"
+msgstr ""
+
+msgid "Italien"
+msgstr ""
+
+msgid "Lituanien"
+msgstr ""
+
+msgid "Néerlandais"
+msgstr ""
+
+msgid "Norvégien"
+msgstr ""
+
+msgid "Polonais"
+msgstr ""
+
+msgid "Portugais"
+msgstr ""
+
+msgid "Roumain"
+msgstr ""
+
+msgid "Russe"
+msgstr ""
+
+msgid "Slovaque"
+msgstr ""
+
+msgid "Slovène"
+msgstr ""
+
+msgid "Suédois"
+msgstr ""
+
+msgid "Turc"
+msgstr ""
+
+msgid "Chinois"
+msgstr ""
+
+msgid "Proposition"
+msgstr ""
+
+msgid "Rejeté"
+msgstr ""
+
+msgid "Actif"
+msgstr ""
+
+msgid "Fermé"
+msgstr ""
+
+msgid "En cours de copie"
+msgstr ""
+
+msgid "Desk"
+msgstr ""
+
+#, fuzzy
+#| msgid "Non"
+msgid "Nom"
+msgstr "No"
+
+msgid "Description"
+msgstr ""
+
+msgid "Arborescence des contenus"
+msgstr ""
+
+msgid "Responsables"
+msgstr ""
+
+msgid "Fichiers liés"
+msgstr ""
+
+msgid "Statut"
+msgstr ""
+
+#, fuzzy
+#| msgid "Créé le"
+msgid "Fermé le"
+msgstr "Created on"
+
+#~ msgid "<em class=\"text-muted small\">Aucune différence</em>"
+#~ msgstr "<em class=\"text-muted small\">No difference</em>"
+
+#~ msgid ""
+#~ "Entrez une adresse email valide (une seule par demande de validation)"
+#~ msgstr "Please type a valid email address (only one by validation request)"
+
+#~ msgid "Enter a zip code in the format XXXXX."
+#~ msgstr "Enter a zip code in the format XXXXX."
+
+#~ msgid "N/A"
+#~ msgstr "N/A"
+
+#~ msgid "Sélectionnez une région"
+#~ msgstr "Select Region"
+
+#~ msgid "( ou l'original )"
+#~ msgstr "( or original )"
+
+#~ msgid "Veuillez entrer une liste de catégorie séparées par des virgules"
+#~ msgstr "Please type in a coma separated category list"
+
+#~ msgid "titre"
+#~ msgstr "title"

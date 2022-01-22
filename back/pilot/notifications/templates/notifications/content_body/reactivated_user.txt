@@ -1,0 +1,8 @@
+{% load i18n %}
+{% blocktrans with full_name=user.get_friendly_name username=user.username %}
+Bonjour {{ full_name }},
+
+Votre compte Pilot @{{ username }} a été réactivé sur le desk {{ desk }} par l'administrateur @{{ reactivated_by }}
+
+Si vous avez oublié votre mot de passe, cliquez sur le lien "Mot de passe oublié?" de la page de connexion.
+{% endblocktrans %}

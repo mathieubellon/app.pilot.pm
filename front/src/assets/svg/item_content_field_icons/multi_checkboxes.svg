@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="85px" viewBox="0 0 80 85" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(32.000000, 8.000000)">
+            <rect id="Rectangle" stroke="#000000" x="0.5" y="2.5" width="15" height="15"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="2" x="1" y="3" width="14" height="14"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="2" x="1" y="24" width="14" height="14"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="2" x="1" y="3" width="14" height="14"></rect>
+            <text id="x" font-family="Rubik-Medium, Rubik" font-size="15" font-weight="400" fill="#000000">
+                <tspan x="4" y="14">x</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="2" x="1" y="46" width="14" height="14"></rect>
+            <text id="x" font-family="Rubik-Medium, Rubik" font-size="15" font-weight="400" fill="#000000">
+                <tspan x="4" y="57">x</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

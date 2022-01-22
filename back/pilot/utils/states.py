@@ -1,0 +1,5 @@
+STATE_IDEA = 'idea'
+STATE_REJECTED = 'rejected'
+STATE_ACTIVE = 'active'
+STATE_CLOSED = 'closed'
+STATE_COPY = 'copy'

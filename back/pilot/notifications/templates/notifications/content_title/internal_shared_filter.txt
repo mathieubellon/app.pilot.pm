@@ -1,0 +1,2 @@
+{% load i18n %}
+{{ sender.get_friendly_name }} {% trans 'a partagé avec vous son filtre' %} "{{ saved_filter }}"

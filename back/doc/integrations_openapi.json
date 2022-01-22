@@ -1,0 +1,1286 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Pilot integration API",
+        "description": "TODO",
+        "version": "beta"
+    },
+    "basePath": "/integrations/beta",
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "securityDefinitions": {
+        "Basic": {
+            "type": "basic"
+        }
+    },
+    "security": [
+        {
+            "Basic": []
+        }
+    ],
+    "paths": {
+        "/channels/": {
+            "get": {
+                "operationId": "channels_list",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "q_partial",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "created_by",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "number"
+                    },
+                    {
+                        "name": "owners",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "updated_by",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "order_by",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Specify required field by comma",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "omit",
+                        "in": "query",
+                        "description": "Specify required field by comma",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "expand",
+                        "in": "query",
+                        "description": "Specify required nested items by comma",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "A page number within the paginated result set.",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Number of results to return per page.",
+                        "required": false,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "required": [
+                                "count",
+                                "results"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "count": {
+                                    "type": "integer"
+                                },
+                                "next": {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "x-nullable": true
+                                },
+                                "previous": {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "x-nullable": true
+                                },
+                                "results": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/IntegrationsChannel"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "channels"
+                ]
+            },
+            "parameters": []
+        },
+        "/channels/{id}/": {
+            "get": {
+                "operationId": "channels_read",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/IntegrationsChannel"
+                        }
+                    }
+                },
+                "tags": [
+                    "channels"
+                ]
+            },
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        "/item_types/": {
+            "get": {
+                "operationId": "item_types_list",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "A page number within the paginated result set.",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Number of results to return per page.",
+                        "required": false,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "required": [
+                                "count",
+                                "results"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "count": {
+                                    "type": "integer"
+                                },
+                                "next": {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "x-nullable": true
+                                },
+                                "previous": {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "x-nullable": true
+                                },
+                                "results": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/IntegrationsItemType"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "item_types"
+                ]
+            },
+            "parameters": []
+        },
+        "/item_types/{id}/": {
+            "get": {
+                "operationId": "item_types_read",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/IntegrationsItemType"
+                        }
+                    }
+                },
+                "tags": [
+                    "item_types"
+                ]
+            },
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "description": "A unique integer value identifying this Type de contenu.",
+                    "required": true,
+                    "type": "integer"
+                }
+            ]
+        },
+        "/items/": {
+            "get": {
+                "operationId": "items_list",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "q_partial",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channels",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channel_owners",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "created_at",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "created_by",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "number"
+                    },
+                    {
+                        "name": "item_owners",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "item_type",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "item_tags",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "master_translation",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "members",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "owners",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "project",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "project_state",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "targets",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "task_assignees",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "updated_by",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "workflow_state",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "project_owners",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "order_by",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Specify required field by comma",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "omit",
+                        "in": "query",
+                        "description": "Specify required field by comma",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "expand",
+                        "in": "query",
+                        "description": "Specify required nested items by comma",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "A page number within the paginated result set.",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Number of results to return per page.",
+                        "required": false,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "required": [
+                                "count",
+                                "results"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "count": {
+                                    "type": "integer"
+                                },
+                                "next": {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "x-nullable": true
+                                },
+                                "previous": {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "x-nullable": true
+                                },
+                                "results": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/IntegrationsItem"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "items"
+                ]
+            },
+            "parameters": []
+        },
+        "/items/{id}/": {
+            "get": {
+                "operationId": "items_read",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/IntegrationsItem"
+                        }
+                    }
+                },
+                "tags": [
+                    "items"
+                ]
+            },
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        "/projects/": {
+            "get": {
+                "operationId": "projects_list",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "q_partial",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channels",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "created_at",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "created_by",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "end",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "owners",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "start",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "targets",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "updated_by",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "channels_owners",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "members",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "priority",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "order_by",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Specify required field by comma",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "omit",
+                        "in": "query",
+                        "description": "Specify required field by comma",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "expand",
+                        "in": "query",
+                        "description": "Specify required nested items by comma",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "A page number within the paginated result set.",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Number of results to return per page.",
+                        "required": false,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "required": [
+                                "count",
+                                "results"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "count": {
+                                    "type": "integer"
+                                },
+                                "next": {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "x-nullable": true
+                                },
+                                "previous": {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "x-nullable": true
+                                },
+                                "results": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/IntegrationsProject"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "projects"
+                ]
+            },
+            "parameters": []
+        },
+        "/projects/{id}/": {
+            "get": {
+                "operationId": "projects_read",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/IntegrationsProject"
+                        }
+                    }
+                },
+                "tags": [
+                    "projects"
+                ]
+            },
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        "/workflow_states/": {
+            "get": {
+                "operationId": "workflow_states_list",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "A page number within the paginated result set.",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Number of results to return per page.",
+                        "required": false,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "required": [
+                                "count",
+                                "results"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "count": {
+                                    "type": "integer"
+                                },
+                                "next": {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "x-nullable": true
+                                },
+                                "previous": {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "x-nullable": true
+                                },
+                                "results": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/IntegrationsWorkflowState"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "workflow_states"
+                ]
+            },
+            "parameters": []
+        },
+        "/workflow_states/{id}/": {
+            "get": {
+                "operationId": "workflow_states_read",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/IntegrationsWorkflowState"
+                        }
+                    }
+                },
+                "tags": [
+                    "workflow_states"
+                ]
+            },
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "description": "A unique integer value identifying this workflow state.",
+                    "required": true,
+                    "type": "integer"
+                }
+            ]
+        }
+    },
+    "definitions": {
+        "IntegrationsUser": {
+            "title": "Updated by",
+            "required": [
+                "username"
+            ],
+            "type": "object",
+            "properties": {
+                "id": {
+                    "title": "ID",
+                    "type": "integer",
+                    "readOnly": true
+                },
+                "username": {
+                    "title": "Nom d'utilisateur",
+                    "description": "160 caract\u00e8res maximum. Lettres, nombre et \"_\" .",
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9_]+$",
+                    "maxLength": 160,
+                    "minLength": 1
+                }
+            }
+        },
+        "IntegrationsChannel": {
+            "required": [
+                "name",
+                "updated_by"
+            ],
+            "type": "object",
+            "properties": {
+                "created_at": {
+                    "title": "Cr\u00e9\u00e9 le",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "created_by": {
+                    "title": "Cr\u00e9\u00e9 par",
+                    "type": "integer",
+                    "x-nullable": true
+                },
+                "description": {
+                    "title": "Description",
+                    "type": "string",
+                    "readOnly": true
+                },
+                "hierarchy": {
+                    "title": "Arborescence des contenus",
+                    "type": "object"
+                },
+                "id": {
+                    "title": "ID",
+                    "type": "integer",
+                    "readOnly": true
+                },
+                "name": {
+                    "title": "Nom",
+                    "type": "string",
+                    "maxLength": 200,
+                    "minLength": 1
+                },
+                "owners": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "readOnly": true,
+                    "uniqueItems": true
+                },
+                "state": {
+                    "title": "Statut",
+                    "type": "string",
+                    "enum": [
+                        "idea",
+                        "rejected",
+                        "active",
+                        "closed",
+                        "copy"
+                    ]
+                },
+                "type": {
+                    "title": "Type",
+                    "type": "integer",
+                    "readOnly": true
+                },
+                "updated_at": {
+                    "title": "Mis \u00e0 jour \u00e0",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "updated_by": {
+                    "$ref": "#/definitions/IntegrationsUser"
+                }
+            }
+        },
+        "IntegrationsItemType": {
+            "required": [
+                "name"
+            ],
+            "type": "object",
+            "properties": {
+                "content_schema": {
+                    "title": "Schema",
+                    "type": "object"
+                },
+                "id": {
+                    "title": "ID",
+                    "type": "integer",
+                    "readOnly": true
+                },
+                "name": {
+                    "title": "Nom",
+                    "type": "string",
+                    "maxLength": 500,
+                    "minLength": 1
+                }
+            }
+        },
+        "IntegrationsItem": {
+            "type": "object",
+            "properties": {
+                "channels": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "readOnly": true,
+                    "uniqueItems": true
+                },
+                "content": {
+                    "title": "Content",
+                    "type": "string",
+                    "readOnly": true
+                },
+                "created_at": {
+                    "title": "Cr\u00e9\u00e9 le",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "created_by": {
+                    "title": "Cr\u00e9\u00e9 par",
+                    "type": "integer",
+                    "x-nullable": true
+                },
+                "id": {
+                    "title": "ID",
+                    "type": "integer",
+                    "readOnly": true
+                },
+                "item_type": {
+                    "title": "Item type",
+                    "type": "integer",
+                    "readOnly": true
+                },
+                "language": {
+                    "title": "Langue du contenu",
+                    "type": "string",
+                    "enum": [
+                        "ar",
+                        "bg_BG",
+                        "cs_CZ",
+                        "da_DK",
+                        "de_DE",
+                        "el_GR",
+                        "en_US",
+                        "es_ES",
+                        "et_EE",
+                        "fi_FI",
+                        "fr_FR",
+                        "hr_HR",
+                        "hu_HU",
+                        "it_IT",
+                        "lt_LT",
+                        "ja_JA",
+                        "nl_NL",
+                        "no_NO",
+                        "pl_PL",
+                        "pt_PT",
+                        "ro_RO",
+                        "ru_RU",
+                        "sk_SK",
+                        "sl_SI",
+                        "sv_SE",
+                        "tr_TR",
+                        "zh_CN"
+                    ]
+                },
+                "last_edition_datetime": {
+                    "title": "Mise \u00e0 jour du contenu \u00e0",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "last_editor": {
+                    "title": "Last editor",
+                    "type": "string",
+                    "readOnly": true
+                },
+                "master_translation": {
+                    "title": "Master translation",
+                    "type": "integer",
+                    "readOnly": true
+                },
+                "owners": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "readOnly": true,
+                    "uniqueItems": true
+                },
+                "project": {
+                    "title": "Project",
+                    "type": "integer",
+                    "readOnly": true
+                },
+                "publication_dt": {
+                    "title": "Publication dt",
+                    "type": "string",
+                    "format": "date-time",
+                    "x-nullable": true
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "readOnly": true,
+                    "uniqueItems": true
+                },
+                "targets": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "readOnly": true,
+                    "uniqueItems": true
+                },
+                "title": {
+                    "title": "Title",
+                    "type": "string",
+                    "readOnly": true
+                },
+                "translations": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "readOnly": true,
+                    "uniqueItems": true
+                },
+                "updated_at": {
+                    "title": "Mis \u00e0 jour \u00e0",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "updated_by": {
+                    "title": "Mis \u00e0 jour par",
+                    "type": "integer",
+                    "x-nullable": true
+                },
+                "version": {
+                    "title": "Version",
+                    "type": "string",
+                    "readOnly": true
+                },
+                "workflow_state": {
+                    "title": "Workflow state",
+                    "type": "integer",
+                    "readOnly": true
+                }
+            }
+        },
+        "IntegrationsProject": {
+            "required": [
+                "name"
+            ],
+            "type": "object",
+            "properties": {
+                "category": {
+                    "title": "Category",
+                    "type": "integer",
+                    "readOnly": true
+                },
+                "channels": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "readOnly": true,
+                    "uniqueItems": true
+                },
+                "created_at": {
+                    "title": "Cr\u00e9\u00e9 le",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "created_by": {
+                    "title": "Cr\u00e9\u00e9 par",
+                    "type": "integer",
+                    "x-nullable": true
+                },
+                "description": {
+                    "title": "Description",
+                    "type": "string",
+                    "readOnly": true
+                },
+                "end": {
+                    "title": "Date de fin",
+                    "type": "string",
+                    "format": "date",
+                    "x-nullable": true
+                },
+                "hierarchy": {
+                    "title": "Arborescence des contenus",
+                    "type": "object"
+                },
+                "id": {
+                    "title": "ID",
+                    "type": "integer",
+                    "readOnly": true
+                },
+                "name": {
+                    "title": "Nom",
+                    "type": "string",
+                    "maxLength": 200,
+                    "minLength": 1
+                },
+                "members": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "readOnly": true,
+                    "uniqueItems": true
+                },
+                "owners": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "readOnly": true,
+                    "uniqueItems": true
+                },
+                "priority": {
+                    "title": "Priority",
+                    "type": "integer",
+                    "readOnly": true
+                },
+                "start": {
+                    "title": "Date de d\u00e9but",
+                    "type": "string",
+                    "format": "date",
+                    "x-nullable": true
+                },
+                "state": {
+                    "title": "Statut",
+                    "type": "string",
+                    "enum": [
+                        "idea",
+                        "rejected",
+                        "active",
+                        "closed",
+                        "copy"
+                    ]
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "readOnly": true,
+                    "uniqueItems": true
+                },
+                "targets": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "readOnly": true,
+                    "uniqueItems": true
+                },
+                "updated_at": {
+                    "title": "Mis \u00e0 jour \u00e0",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "updated_by": {
+                    "title": "Mis \u00e0 jour par",
+                    "type": "integer",
+                    "x-nullable": true
+                }
+            }
+        },
+        "IntegrationsWorkflowState": {
+            "required": [
+                "color",
+                "label",
+                "order"
+            ],
+            "type": "object",
+            "properties": {
+                "color": {
+                    "title": "Couleur",
+                    "type": "string",
+                    "maxLength": 7,
+                    "minLength": 1
+                },
+                "id": {
+                    "title": "ID",
+                    "type": "integer",
+                    "readOnly": true
+                },
+                "label": {
+                    "title": "Label",
+                    "type": "string",
+                    "maxLength": 200,
+                    "minLength": 1
+                },
+                "order": {
+                    "title": "Ordre",
+                    "type": "integer",
+                    "maximum": 32767,
+                    "minimum": 0
+                }
+            }
+        }
+    }
+}

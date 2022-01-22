@@ -1,0 +1,27 @@
+{% load i18n %}
+{% comment %}This template is default messaging{% endcomment %}
+
+{% if content_title %}
+{{content_title}}
+{% endif %}
+
+{% if quote %}
+==========
+{{quote|striptags}}
+==========
+{% endif %}
+
+{% if content_body %}
+{{content_body}}
+{% endif %}
+
+{% if button_action_url %}
+-----
+{{button_action_text}}
+{{button_action_url}}
+-----
+{% endif %}
+
+----------------------
+{% trans "Ce message est une notification automatique envoyée par l'application Pilot." %}
+{% if notifications_settings_url %}{% trans "Pour gérer vos alertes, rendez-vous sur" %} {{ notifications_settings_url }}{% endif %}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0 24 24" style="width:24px; height:24px" class="feather feather-drupal">
+    <g transform="matrix(1,0,0,1,0,0)">
+        <path d="M 21.72,13.53c0,5.371-4.354,9.725-9.725,9.725S2.27,18.901,2.27,13.53c0-6.86,8.53-9.77,9.34-12.78 C12.64,3.73,21.72,5.56,21.72,13.53z "
+              stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M 9.48,11.67c1.8,0,3.7,2.17,4.74,2.17s3.07-1.77,4.14-1.77s1.53,3.67-0.6,5.27 c-0.94,0.17-2.77-2.4-3.54-2.4S10.43,17.51,9,17.51C4.91,17.51,5.69,11.67,9.48,11.67z "
+              stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M 12.93,18.4 c0.365-0.455,0.917-0.72,1.5-0.72c0.385,0.034,0.73,0.249,0.93,0.58 " stroke="currentColor"
+              fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M 10.88,19.92c1.308,0.996,3.081,1.125,4.52,0.33" stroke="currentColor" fill="none" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+</svg>

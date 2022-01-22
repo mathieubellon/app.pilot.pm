@@ -1,0 +1,76 @@
+@import "~@sass/common_variables.scss";
+@import "~vue-select/src/scss/global/variables";
+@import "~vue-select/src/scss/global/component";
+@import "~vue-select/src/scss/global/animations";
+@import "~vue-select/src/scss/global/states";
+
+@import "~vue-select/src/scss/modules/dropdown-toggle";
+.vs__dropdown-toggle {
+    padding: 0;
+    background-color: $field-background-color;
+    color: $field-color;
+    border: $field-border;
+    border-radius: $field-border-radius;
+}
+@import "~vue-select/src/scss/modules/open-indicator";
+@import "~vue-select/src/scss/modules/clear";
+@import "~vue-select/src/scss/modules/dropdown-menu";
+@import "~vue-select/src/scss/modules/dropdown-option";
+@import "~vue-select/src/scss/modules/selected";
+.vs__selected {
+    background-color: $field-background-color;
+    color: $field-color;
+}
+
+.vs__deselect {
+    background-color: $field-background-color;
+    color: $field-color;
+}
+@import "~vue-select/src/scss/modules/search-input";
+.vs__search,
+.vs__search:focus {
+    background-color: $field-background-color;
+    color: $field-color;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+// Single, when searching but not loading or open
+.vs--single.vs--searching:not(.vs--open):not(.vs--loading) {
+    .vs__search {
+        opacity: 1;
+    }
+}
+@import "~vue-select/src/scss/modules/spinner";
+.vs__clear,
+.vs__open-indicator {
+    fill: $field-color;
+}
+
+/**
+Here we need to use CSS Selector more specific than those builtin vue-select,
+otherwise tailwindCSS Preflight will take precedence.
+ */
+input[type="search"].vs__search {
+    @extend .vs__search;
+}
+//.vs__selected, .vs__search, .vs__search:focus, input.vs__search:focus[type=search], input.vs__search[type=search], .vs__actions{
+//    margin: 0;
+//    padding:0;
+//}
+//.v-select svg{
+//    display: block;
+//}
+//.vs__selected-options .vs__selected svg{
+//    display: inline-block;
+//}
+//.vs__dropdown-option svg {
+//    display: inline-block;
+//}
+//
+//.vs__search::placeholder,
+//.vs__dropdown-toggle,
+//.vs__dropdown-menu {
+//    @apply py-2 px-2 rounded-t-sm rounded-b-none border border-gray-200 bg-gray-100 cursor-pointer;
+//}
+//

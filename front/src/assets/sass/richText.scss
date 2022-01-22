@@ -1,0 +1,223 @@
+/**
+ * Style partly copied from https://github.com/scrumpy/tiptap/blob/master/examples/assets/sass/editor.scss
+ */
+
+@import "colors";
+@import "~@sass/common_variables.scss";
+
+$h1: 1.7rem;
+$h2: 1.6rem;
+$h3: 1.5rem;
+$h4: 1.4rem;
+$h5: 1.3rem;
+$h6: 1.2rem;
+
+@mixin heading($size) {
+    font-size: $size;
+    line-height: $size;
+    margin-top: $size;
+    margin-bottom: $size;
+}
+
+.RichTextStyling {
+    position: relative;
+    line-height: 1.4rem;
+    white-space: pre-wrap; // Very important line that prevent a bug on trailing whitespaces !
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    font-variant-ligatures: none;
+    // We remove "Segoe UI Symbol" from the default tailwindcss font families,
+    // because it leads to an horrible emoji rendering on win7/FF
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+        Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+
+    * {
+        caret-color: currentColor;
+    }
+
+    p,
+    ul,
+    ol,
+    blockquote,
+    pre {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        @apply leading-normal;
+    }
+
+    h1 {
+        @include heading($h1);
+    }
+    h2 {
+        @include heading($h2);
+    }
+    h3 {
+        @include heading($h3);
+    }
+    h4 {
+        @include heading($h4);
+    }
+    h5 {
+        @include heading($h5);
+    }
+    h6 {
+        @include heading($h6);
+    }
+
+    ul,
+    ol {
+        padding-left: 2rem;
+    }
+
+    ul {
+        list-style: disc;
+    }
+    ol {
+        list-style: decimal;
+    }
+
+    li {
+        position: relative;
+    }
+
+    li > p {
+        margin: 0;
+    }
+
+    pre {
+        white-space: pre-wrap;
+        padding: 0.7rem 1rem;
+        border-radius: 5px;
+        background: $dark;
+        color: $gray-lighter;
+        font-size: 0.8rem;
+        overflow-x: auto;
+
+        code {
+            display: block;
+        }
+    }
+
+    blockquote {
+        border-left: 3px solid rgba($dark, 0.1);
+        color: rgba($dark, 0.8);
+        padding-left: 0.8rem;
+        font-style: italic;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    p code {
+        display: inline-block;
+        padding: 0 0.4rem;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        background: rgba($dark, 0.1);
+        color: rgba($dark, 0.8);
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    figcaption {
+        text-align: center;
+        font-style: italic;
+        font-size: 1.1em;
+        padding: 1rem;
+        background-color: $greyblue050;
+        border: solid 1px $grey700;
+        border-top: none;
+    }
+
+    hr {
+        border-top-width: 2px;
+    }
+
+    table{
+        @apply w-full my-4 table-fixed;
+    }
+
+    td, th{
+        @apply border-2 border-gray-300;
+    }
+
+    .ProseMirror {
+        outline: none;
+        border: none;
+
+        /* Placeholder text */
+        .empty-paragraph {
+            position: relative;
+        }
+
+        p.empty-paragraph::after {
+            content: attr(data-empty-text);
+            font-size: 1rem;
+            opacity: 0.2;
+            position: absolute;
+            pointer-events: none;
+            top: 0;
+        }
+    }
+
+    .highlight-range-style {
+        background: $orange400;
+    }
+
+    .mention {
+        @apply font-bold;
+
+        &.team {
+            @apply text-purple-700;
+        }
+        &.group {
+            @apply text-indigo-700;
+        }
+        &.user {
+            @apply text-teal-700;
+        }
+        &.all {
+            @apply text-orange-700;
+        }
+    }
+}
+
+.RichTextEditor {
+    background-color: $field-background-color;
+    color: $field-color;
+    border: $field-border;
+    border-radius: $field-border-radius;
+    caret-color: $field-caret-color;
+
+    font-size: $field-font-size;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: $field-line-height;
+    margin: 0;
+    padding: 0;
+    outline: currentcolor none medium;
+    transition: all 0.1s ease 0s;
+    width: 100%;
+
+    &:focus {
+        @apply cursor-text;
+    }
+
+    .selected-node{
+        @apply bg-blue-50;
+    }
+}
+
+.RichTextCommentContainer {
+    @apply border border-gray-300 rounded text-base bg-white w-full pt-0;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project #{{ project.id }}</title>
+</head>
+<body>
+<h1>Project #{{ project.id }} {{ project.name }}</h1>
+
+Metadata : <a href="../../{{ metadata_path }}" target="_blank">{{ metadata_path }}</a><br/>
+
+<h2>Linked Items</h2>
+{%  for item_index in linked_items_indicies %}
+    <a href="../../{{ item_index.path }}">{{ item_index.name }}</a><br />
+{%  endfor %}
+
+<h2>Linked Assets</h2>
+{%  for asset_index in linked_assets_indicies %}
+    <a href="../../{{ asset_index.path }}">{{ asset_index.name }}</a><br />
+{%  endfor %}
+</body>
+</html>

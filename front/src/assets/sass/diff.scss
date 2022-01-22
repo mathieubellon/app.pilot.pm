@@ -1,0 +1,32 @@
+// Diff
+
+@import "colors";
+
+ins,
+.diff-inserted,
+ins p,
+.diff-inserted p {
+    @apply bg-green-200 text-green-800 rounded px-1;
+    text-decoration: underline;
+}
+
+del,
+.diff-deleted,
+del p,
+.diff-deleted p {
+    @apply bg-red-200 text-red-800 rounded px-1;
+    text-decoration: line-through;
+}
+
+a {
+    ins,
+    .diff-inserted,
+    ins p,
+    .diff-inserted p,
+    del,
+    .diff-deleted,
+    del p,
+    .diff-deleted p {
+        @apply text-blue-700;
+    }
+}

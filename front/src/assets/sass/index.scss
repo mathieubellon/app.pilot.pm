@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+@import "mixins";
+@import "colors";
+@import "include_media";
+@import "anim";
+
+@import "_global"; // Global elements (html, body, a, ..) styles
+
+@import "buttons";
+@import "tabs";
+@import "forms";
+@import "panels";
+@import "dropdown";
+@import "tooltip";
+@import "help_text";
+@import "svg";
+@import "richText";
+@import "picker";
+@import "diff";
+@import "misc";
+
+// // library styles
+@import "overrides/fullcalendar";
+@import "overrides/vue-select";
+
+@import "~tiptap/src/style.css";
+
+// // Business-specific styles
+@import "business/items_vars.scss";
+@import "business/assets.scss";
+@import "business/notifications.scss";
