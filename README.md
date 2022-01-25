@@ -3,7 +3,7 @@
 After 10 years of an incredible lifetime adventure we must put down our company.
 I couldn't just delete this code, build by many, over so much time.
 So here it is, publicly accessible.
-Farewall my old friend, you did brilliantly.
+Farewell my old friend, you did brilliantly.
 *******************
 
 
